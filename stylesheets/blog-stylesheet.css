@@ -1,0 +1,53 @@
+body{
+  background-image: url(http://www.hdesktopict.com/wp-content/uploads/2014/04/vintage-floral-wallpapers-7.jpg);
+}
+
+.title-box{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#blog-title{
+  font-family: cursive;
+  font-size: 40px;
+}
+
+.title-box p{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: -30px;
+}
+
+.blog-text{
+  float: left;
+  width: 85%;
+  height: 500px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.blog-text .container{
+  text-align: justify;
+  padding-left: 20em;
+  font-family: serif;
+  font-size: 20px;
+}
+
+.nav-box{
+  float: right;
+  width: 15%;
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: block;
+}
+
+.nav-box ul li{
+  list-style: disc;
+  text-align: left;
+}
+
+.footer{
+  clear: both;
+}
