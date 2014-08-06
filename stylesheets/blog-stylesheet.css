@@ -35,8 +35,11 @@ body{
 }
 
 .blog-text .container{
+  text-indent: 50px;
   text-align: justify;
+  white-space: pre-wrap;
   padding-left: 5em;
+  padding-right: 5em;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 20px;
 }
