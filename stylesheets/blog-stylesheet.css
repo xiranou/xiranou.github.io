@@ -1,79 +1,50 @@
-body{
-  background-color: #B2CCFF;
+html{
+  background-color: #F0E8D9;
 }
 
-.title-box{
+.header{
+  border: 1px solid black;
   text-align: center;
-  padding-bottom: 30px;
-  background-color:#E8F0FF;
 }
 
-#blog-title{
-  font-family: cursive;
-  font-size: 40px;
-  margin-bottom: -30px;
+.header h3{
+  font-size: 35px;
 }
 
-#subtitle{
-  font-family: cursive;
+.header p{
   font-size: 20px;
-  margin-bottom: -20px;
+  margin-top: -20px;
 }
 
-.title-box p{
-  padding-top: 10px;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-}
-
-.blog-text{
-  background-color:#E8F0FF;
+.blog{
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
   float: left;
-  width: 85%;
-  height: 500px;
-  margin-top: 30px;
+  width: 80%;
+  height: 35em;
 }
 
-.blog-text .container{
-  text-indent: 50px;
-  text-align: justify;
+.post{
+  border: 1px solid black;
   white-space: pre-wrap;
-  padding-left: 5em;
-  padding-right: 5em;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 20px;
+  height: 100%;
+  padding: 10px 10px 10px 50px;
+}
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  margin-top: -50px;
 }
 
 .nav-box{
-  background-color: #99CCFF;
+  border: 1px solid black;
   float: right;
   width: 15%;
-  height: 500px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  text-align: center;
-  display: block;
-}
-
-#link-list{
-  margin-top: 40px;
-}
-
-.nav-box ul{
-  text-align: left;
-}
-
-.nav-box li{
-  list-style-position: inside;
-  list-style: circle;
-  padding-left: 1em;
-}
-
-a:hover{
-  color: red;
+  height: 35em;
+  padding: 10px 10px 10px 10px;
 }
 
 .footer{
   clear: both;
-  text-align: center;
 }
