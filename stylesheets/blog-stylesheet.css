@@ -8,12 +8,11 @@ html{
 }
 
 .header h3{
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .header p{
-  font-size: 20px;
-  margin-top: -20px;
+  font-size: 25px;
 }
 
 .blog{
@@ -21,30 +20,44 @@ html{
   padding: 10px 10px 10px 10px;
   float: left;
   width: 80%;
-  height: 35em;
-}
-
-.post{
-  border: 1px solid black;
-  white-space: pre-wrap;
-  height: 100%;
-  padding: 10px 10px 10px 50px;
+  height: 40em;
 }
 
 .title{
   text-align: center;
-  font-size: 30px;
-  margin-top: -50px;
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+.sub-title{
+  text-align: center;
+  font-size: 20px;
+}
+
+.blog article{
+  border: 1px solid black;
+  height: 95%;
+  padding: 10px 60px 10px 60px;
+}
+
+#post{
+  white-space: pre-wrap;
+  text-indent: 50px;
+  margin-top: -10px;
+  font-size: 18px;
+  font-family: cursive;
 }
 
 .nav-box{
   border: 1px solid black;
   float: right;
   width: 15%;
-  height: 35em;
+  height: 40em;
   padding: 10px 10px 10px 10px;
 }
 
 .footer{
   clear: both;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
