@@ -21,18 +21,19 @@ html{
   float: left;
   width: 80%;
   height: 40em;
-  font-family:Georgia, serif;
 }
 
 .title{
   text-align: center;
   font-size: 35px;
+  font-family:Georgia, serif;
   margin-bottom: -10px;
 }
 
 .sub-title{
   text-align: center;
   font-size: 20px;
+  font-family: "Book Antiqua", Palatino, serif;
 }
 
 .blog article{
