@@ -20,7 +20,6 @@ html{
 
 .blog{
   padding: 10px 10px 10px 10px;
-  position: relative;
   float: left;
   width: 80%;
   height: 40em;
@@ -51,7 +50,6 @@ html{
 }
 
 .nav-box{
-  position: relative;
   float: right;
   width: 15%;
   height: 40em;
@@ -59,8 +57,8 @@ html{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.nav-box>.container{
-  width: 90%;
+.nav-box .container{
+  width: 100%;
   height: 95%;
   padding: 5px 5px 5px 5px;
   text-align: center;
@@ -70,10 +68,14 @@ html{
   text-decoration: none;
 }
 
-.nav-box ul{
-  list-style-position: inside;
-  text-align: left;
+.nav-box .container ul{
+  list-style-type: none;
   text-indent: -10px;
+  margin-left: -35px;
+}
+
+.nav-box>.container li{
+  margin-bottom: 10px;
 }
 
 a{
