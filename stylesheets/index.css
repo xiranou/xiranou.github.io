@@ -5,6 +5,20 @@ html{
 header{
   border: 1px solid black;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+a:hover{
+  color: green;
+}
+
+a:visited{
+  color: red;
+}
+
+header li{
+  display: inline;
+  margin-right: 10px;
 }
 
 .main{
