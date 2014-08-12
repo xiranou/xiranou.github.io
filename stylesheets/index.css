@@ -1,0 +1,33 @@
+html{
+  background-color: purple;
+}
+
+header{
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.main{
+  border: 1px solid black;
+  height: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.social-icon{
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-icon img{
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+footer{
+  border: 1px solid black;
+  text-align: center;
+}
