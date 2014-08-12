@@ -24,29 +24,24 @@ html{
   float: left;
   width: 80%;
   height: 40em;
+  overflow: scroll;
+  text-align: center;
 }
 
 .title{
-  text-align: center;
   font-size: 28px;
   margin-bottom: -30px;
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 .sub-title{
-  text-align: center;
   font-size: 20px;
   white-space: pre-line;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.blog article{
-  overflow: scroll;
-  height: 95%;
-  padding: 10px 60px 10px 60px;
-}
-
 #post{
+  text-align: justify;
   white-space: pre-wrap;
   text-indent: 50px;
   margin-top: -10px;
