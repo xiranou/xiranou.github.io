@@ -1,5 +1,7 @@
 body{
-  /*background-image: url("imgs/BlackWood.png");*/
+  background-image: url("imgs/BlackWood.png");
+  background-repeat: repeat-x;
+  /*background-color: #b0c4de;*/
 }
 
 header{
