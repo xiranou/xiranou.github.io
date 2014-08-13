@@ -1,20 +1,20 @@
 body{
-  background: url("../imgs/BlackWood.png");
-  color: white;
+  /*background: url("../imgs/BlackWood.png");*/
+  color: #0927B2;
+  background-color: #400F00;
 }
 
 header{
-  border: 1px solid white;
   margin-bottom: 20px;
   text-align: center;
 }
 
 nav a{text-decoration: none;
-color: purple;}
+color: blue;}
 
 nav a:hover{color: green;}
 
-a:visited{color: red;}
+a:visited{color: purple;}
 
 header li{
   display: inline;
@@ -22,11 +22,17 @@ header li{
 }
 
 .main{
-  border: 1px solid white;
   height: 400px;
   margin-bottom: 20px;
   text-align: center;
-  vertical-align: middle;
+  background-color: #7F1F00;
+}
+
+.main .container{
+  width: 80%;
+  height: 80%;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
 }
 
 .social-icon{
@@ -34,8 +40,14 @@ header li{
   margin-bottom: 20px;
 }
 
-.social-icon img{
+.social-icon .container{
+  padding-top: 10px;
   display: inline-block;
+  height: 80%;
+  width: 80%;
+}
+
+.social-icon img{
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -45,6 +57,5 @@ header li{
 }
 
 footer{
-  border: 1px solid white;
   text-align: center;
 }
