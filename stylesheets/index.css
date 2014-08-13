@@ -9,13 +9,12 @@ header{
   text-align: center;
 }
 
-a:hover{
-  color: green;
-}
+nav a{text-decoration: none;
+color: purple;}
 
-a:visited{
-  color: red;
-}
+nav a:hover{color: green;}
+
+a:visited{color: red;}
 
 header li{
   display: inline;
@@ -39,6 +38,10 @@ header li{
   display: inline-block;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+.social-icon img:hover{
+  opacity: 0.5;
 }
 
 footer{
