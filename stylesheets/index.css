@@ -24,6 +24,8 @@ header li{
 .main{
   height: 400px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   background-color: #7F1F00;
 }
