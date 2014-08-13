@@ -19,12 +19,19 @@ header h1{
 nav{margin-top: 20px;}
 
 nav a{text-decoration: none;
-color: blue;
+color: purple;
 font-size: 20px;}
 
-nav a:hover{color: green;}
+nav a:hover{color: green;
+background-color: white;}
 
-a:visited{color: purple;}
+nav a:visited{color: red;}
+
+nav a:active{background-color: white;}
+
+nav a{border-radius: 10%;
+padding-left: 5px;
+padding-right: 5px;}
 
 header li{
   display: inline;
@@ -45,8 +52,12 @@ header li{
 
 .main nav{
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 40px;
+  padding: 5px 5px 5px 5px;
 }
+
+.main li{
+  margin-top: 20px;}
 
 .social-icon{
   text-align: center;
