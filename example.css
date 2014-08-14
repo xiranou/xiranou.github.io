@@ -3,5 +3,5 @@ div{
   background-color: red;
   height: 100px;
   width: 100px;
-  display: inline-block;
+  display: block;
 }
