@@ -1,6 +1,6 @@
 body{
-  color: #0927B2;
-  background-color: #400F00;
+  color: #86A5FF;
+  background-color: #696F7F;
 }
 
 header{
@@ -19,15 +19,15 @@ header h1{
 nav{margin-top: 20px;}
 
 nav a{text-decoration: none;
-color: purple;
+color: #000099;
 font-size: 20px;}
 
-nav a:hover{color: green;
-background-color: white;}
+nav a:hover{color: #006600;
+background-color: #D2DEFF;}
 
-nav a:visited{color: red;}
+nav a:visited{color: #7D2B00;}
 
-nav a:active{background-color: white;}
+nav a:active{background-color: #D2DEFF;}
 
 nav a{border-radius: 10%;
 padding-left: 5px;
@@ -43,7 +43,6 @@ header li{
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #7F1F00;
   text-align: center;
 }
 

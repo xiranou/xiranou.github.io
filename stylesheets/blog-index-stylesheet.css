@@ -1,6 +1,6 @@
 body{
-  color: #0927B2;
-  background-color: #400F00;
+  color: #86A5FF;
+  background-color: #696F7F;
 }
 
 header{
@@ -41,7 +41,6 @@ header li{
 .main{
   height: 400px;
   margin-bottom: 20px;
-  background-color: #7F1F00;
   text-align: center;
 }
 
@@ -54,10 +53,12 @@ header li{
   display: inline-block;
   margin-right: 40px;
   padding: 5px 5px 5px 5px;
+  font-size: 30px;
 }
 
 .main li{
-  margin-top: 20px;}
+  margin-top: 20px;
+  font-size: 20px;}
 
 .social-icon{
   text-align: center;
