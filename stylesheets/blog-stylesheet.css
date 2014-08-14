@@ -61,12 +61,16 @@ header p{
   font-size: 20px;
 }
 #post code{
-  display: inline-block;
   background-color: yellow;
+  white-space: pre;
+  display: inline-block;
+  width: 40%;
 }
 
 #post img{
   display: inline-block;
+  margin-left: 10px;
+  width: 30%;
 }
 
 .side {
