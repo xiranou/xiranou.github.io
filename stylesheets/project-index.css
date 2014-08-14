@@ -19,19 +19,18 @@ header h1{
 nav{margin-top: 20px;}
 
 nav a{text-decoration: none;
-color: purple;
-font-size: 20px;}
-
-nav a:hover{color: green;
-background-color: #D2DEFF;}
-
-nav a:visited{color: red;}
-
-nav a:active{background-color: #D2DEFF;}
-
-nav a{border-radius: 10%;
+color: #000099;
+font-size: 20px;
+border-radius: 10%;
 padding-left: 5px;
 padding-right: 5px;}
+
+nav a:hover{color: #006600;
+background-color: #D2DEFF;}
+
+nav a:visited{color: #7D2B00;}
+
+nav a:active{background-color: #D2DEFF;}
 
 header li{
   display: inline;
@@ -44,7 +43,6 @@ header li{
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  background-color: #7F1F00;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;

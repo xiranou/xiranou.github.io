@@ -20,7 +20,10 @@ nav{margin-top: 20px;}
 
 nav a{text-decoration: none;
 color: #000099;
-font-size: 20px;}
+font-size: 20px;
+border-radius: 10%;
+padding-left: 5px;
+padding-right: 5px;}
 
 nav a:hover{color: #006600;
 background-color: #D2DEFF;}
@@ -28,10 +31,6 @@ background-color: #D2DEFF;}
 nav a:visited{color: #7D2B00;}
 
 nav a:active{background-color: #D2DEFF;}
-
-nav a{border-radius: 10%;
-padding-left: 5px;
-padding-right: 5px;}
 
 header li{
   display: inline-block;
