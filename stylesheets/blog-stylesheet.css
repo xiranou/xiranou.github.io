@@ -61,15 +61,16 @@ header p{
   font-size: 20px;
 }
 #post code{
-  background-color: yellow;
+  background-color: #FF833D;
   white-space: pre;
   display: inline-block;
+  margin-left: 30px;
   width: 40%;
 }
 
 #post img{
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
   width: 30%;
 }
 
