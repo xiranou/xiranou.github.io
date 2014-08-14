@@ -15,12 +15,49 @@
   <!-- Main Body -->
   <div class="blog">
     <h4 class='title'>
-      <!-- Blog_Title --></h4>
+      Inline vs Inline-block vs Block</h4>
     <p class='sub-title'>
-      <!-- subtitle -->
-      <!-- date --></p>
+      Week-2 Technical Blog
+      08/14/2014</p>
     <p id='post'>
-      <!-- Post_text -->
+      Every HTML element can be consider as a box, a rectangle box. This is called the 'box model' in CSS. The display porperty in CSS determines how these boxes would behave. The most commonly used are inline, inline-block, and block.
+
+      <b>Inline</b>
+
+      Inline is the default property of elements like <code>&lt;span&gt;</code>, <code>&lt;em&gt;</code>, or <code>&lt;img&gt;</code>. They have no line breaks before or after them, and sit between a string of text or other elements. An inline element respects left & right margins and padding, but not top & bottom. It doesn't accept width and height.
+
+      <code>
+        div{border: 1px solid black;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: inline;}
+      </code>
+      <img src="#" alt="inline img">
+
+      Container type HTML elements such as &lt;div&gt; &lt;article&gt; &lt;p&gt; or header elemtns (&lt;h1&gt;, &lt;h2&gt;, etc), have a default display property of 'block'. They force line breaks before and after them, so that they sit right ontop of each other. They respect margins and paddings from all sides and accepts width and height.
+
+      <code>
+        div{border: 1px solid black;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: block;}
+      </code>
+      <img src="#" alt="block img">
+
+      Lastly, the inline-block display property. Elements with this display property will not have line breaks before and after them, thus they will sit like an inline element, between other elements or a string of text. However, they will accept width, heights and margins & paddings from all sides. I'd like to think of them as the hybrid of inline & block.
+
+      <code>
+        div{border: 1px solid black;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: inline-block;}
+      </code>
+      <img src="#" alt="inline-block img">
+
+      You can use CSS to change the display property of HTML elements. This will help greatly when you want your divs to sit next to each-other, or your img tags to stack ontop of each other.
     </p>
   </div>
 
