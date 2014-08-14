@@ -1,6 +1,7 @@
 body{
   color: #0D0F0F;
   background-color: #DFF0F3;
+  font-family: 'Vollkorn', serif;
 }
 
 header{
@@ -8,8 +9,8 @@ header{
   margin-bottom: 50px;
   border-bottom: 10px dotted black;
   text-align: center;
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
+/*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+*/}
 
 header h3{
   font-size: 35px;
@@ -20,7 +21,7 @@ header h3{
 
 header p{
   font-size: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+/*  font-family: "Comic Sans MS", cursive, sans-serif;*/
   margin-bottom: 50px;
 }
 
@@ -37,28 +38,28 @@ header p{
   font-size: 30px;
   font-weight: bold;
   margin-top: 20px;
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
+/*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+*/}
 
 .sub-title{
   font-size: 20px;
   line-height: 150%;
   white-space: pre-line;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
+/*  font-family: "Comic Sans MS", cursive, sans-serif;
+*/}
 
 #post{
   text-align: justify;
   white-space: pre-wrap;
   text-indent: 50px;
-  font-size: 18px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  line-height: 160%;
+  font-size: 20px;
+/*  font-family: "Comic Sans MS", cursive, sans-serif;
+*/  line-height: 160%;
   padding-left: 20px;
   padding-right: 10px;
 }
 #post b{
-  font-size: 20px;
+  font-size: 25px;
 }
 #post code{
   background-color: #FF833D;
@@ -81,8 +82,8 @@ header p{
 }
 
 .side nav{
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
+/*  font-family: "Comic Sans MS", cursive, sans-serif;
+*/}
 
 nav>ul{
   width: 90%;
@@ -106,7 +107,7 @@ a:visited{
 
 a:hover{
   color:#006600;
-}
+  background-color: #6DFFFA;}
 
 .social-icon{
   clear: both;
@@ -136,8 +137,8 @@ footer{
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
+/*  font-family: "Comic Sans MS", cursive, sans-serif;
+*/}
 footer section{
   width: 100%;
   height: 100%;

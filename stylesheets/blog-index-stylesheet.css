@@ -1,6 +1,7 @@
 body{
   color: #0D0F0F;
   background-color: #DFF0F3;
+  font-family: 'Vollkorn', serif;
 }
 
 header{
@@ -26,7 +27,7 @@ padding-left: 5px;
 padding-right: 5px;}
 
 nav a:hover{color: #006600;
-background-color: #D2DEFF;}
+background-color: #6DFFFA;}
 
 nav a:visited{color: #7D2B00;}
 
