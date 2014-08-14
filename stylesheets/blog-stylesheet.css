@@ -54,6 +54,16 @@ header p{
   font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   line-height: 160%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+#post code{
+  display: inline-block;
+}
+
+#post img{
+  display: inline-block;
 }
 
 .side {
