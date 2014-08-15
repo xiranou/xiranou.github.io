@@ -8,6 +8,7 @@ body{
   font-size: 1em;
 }
 
+
 header{
   margin-bottom: 2.0833333%;
   text-align: center;
@@ -22,6 +23,15 @@ header h1{
 }
 
 nav{margin-top: 2.08333333%;}
+
+nav ul{
+  display: inline-block;
+  width: 100%;
+  height: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(26,127,232,0.5);
+}
 
 nav a{text-decoration: none;
 color: #000099;
