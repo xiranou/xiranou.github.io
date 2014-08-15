@@ -1,6 +1,9 @@
 body{
   color: #0D0F0F;
-  background-color: #DFF0F3;
+  /*background-color: #DFF0F3;*/
+  background: url(../imgs/background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   font-family: 'Vollkorn', serif;
   font-size: 1em;
 }
@@ -42,8 +45,8 @@ header li{
 .main{
   height: 100%;
   margin-bottom: 2.08333333%;
-  margin-left: 2.08333333%;
-  margin-right: 2.08333333%;
+  padding-left: 2.08333333%;
+  padding-right: 2.08333333%;
   text-align: center;
   -webkit-column-count: 2;
   -moz-column-count: 2;
