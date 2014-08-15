@@ -2,47 +2,48 @@ body{
   color: #0D0F0F;
   background-color: #DFF0F3;
   font-family: 'Vollkorn', serif;
+  font-size: 1em;
 }
 
 header{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-bottom: 10px dotted black;
+  margin-top: 5.208333333%;
+  margin-bottom: 5.208333333%;
+  border-bottom: thick dotted black;
   text-align: center;
 /*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 */}
 
 header h3{
-  font-size: 35px;
+  font-size: 218.75%;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2.0833333333%;
+  margin-bottom: 2.0833333333%;
 }
 
 header p{
-  font-size: 20px;
+  font-size: 125%;
 /*  font-family: "Comic Sans MS", cursive, sans-serif;*/
-  margin-bottom: 50px;
+  margin-bottom: 5.208333333%;
 }
 
 .blog{
-  padding: 10px 10px 10px 10px;
+  padding: 1.04166666666% 1.04166666666% 1.04166666666% 1.04166666666%;
   float: left;
   width: 80%;
-  height: 40em;
-  overflow: scroll;
+  height: 100%;
+  /*overflow: scroll;*/
   text-align: center;
 }
 
 .title{
-  font-size: 30px;
+  font-size: 187.5%;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 2.0833333333%;
 /*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 */}
 
 .sub-title{
-  font-size: 20px;
+  font-size: 125%;
   line-height: 150%;
   white-space: pre-line;
 /*  font-family: "Comic Sans MS", cursive, sans-serif;
@@ -51,46 +52,42 @@ header p{
 #post{
   text-align: justify;
   white-space: pre-wrap;
-  text-indent: 50px;
-  font-size: 20px;
+  text-indent: 2em;
+  font-size: 125%;
 /*  font-family: "Comic Sans MS", cursive, sans-serif;
 */  line-height: 160%;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 2.0833333333%;
+  padding-right: 1.04166666666%;
 }
 #post b{
-  font-size: 25px;
+  font-size: 156.25%;
 }
 #post code{
   background-color: #FF833D;
   white-space: pre;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 3.125%;
   width: 40%;
 }
 
 #post img{
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 2.083333333%;
   width: 30%;
 }
 
 .side {
   float: right;
   width: 15%;
-  height: 40em;
+  height: 100%;
 }
-
-.side nav{
-/*  font-family: "Comic Sans MS", cursive, sans-serif;
-*/}
 
 nav>ul{
   width: 90%;
   height: 95%;
-  padding-right: 50px;
+  padding-right: 5.208333333%;
   text-align: center;
-  line-height: 2.5em;
+  line-height: 250%;
 }
 
 nav a{
@@ -105,19 +102,19 @@ a:visited{
   color: #7D2B00;
 }
 
-a:hover{
+nav a:hover{
   color:#006600;
   background-color: #6DFFFA;}
 
 .social-icon{
   clear: both;
   text-align: center;
-  margin-bottom: 20px;
-  border-top: 3px dotted black;
+  margin-bottom: 2.083333333%;
+  border-top: thin dotted black;
 }
 
 .social-icon .container{
-  padding-top: 10px;
+  padding-top: 1.04166666666%;
   display: inline-block;
   height: 80%;
   width: 80%;
@@ -134,15 +131,15 @@ a:hover{
 
 footer{
   clear: both;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1.04166666666%;
+  padding-bottom: 1.04166666666%;
   text-align: center;
 /*  font-family: "Comic Sans MS", cursive, sans-serif;
 */}
 footer section{
   width: 100%;
   height: 100%;
-  line-height: 50px;
+  /*line-height: 50px;*/
 
 }
 footer a{
