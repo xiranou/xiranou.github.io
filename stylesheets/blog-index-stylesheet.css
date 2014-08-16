@@ -8,6 +8,15 @@ body{
   font-size: 1em;
 }
 
+.wrapper{
+  background-color: rgba(26,127,232,0.35);
+  height: 100%;
+  padding: 1em 1em 1em 1em;
+  margin-top: 5%;
+  margin-left: 1.2%;
+  margin-right: 1.2%;
+}
+
 header{
   margin-bottom: 2.0833333%;
   text-align: center;
