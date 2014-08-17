@@ -5,7 +5,7 @@ body{
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: 'Vollkorn', serif;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .wrapper{
@@ -93,13 +93,13 @@ nav li{
   font-size: 110%;
   font-weight: bolder;
   width: 100%;
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
 }
 
 .main p{
-  white-space: pre-wrap;
-  text-indent: 2em;
-  /*text-align: center;*/
+  white-space: pre-line;
+  /*text-indent: 2em;*/
+  text-align: center;
   font-size: 100%;
   font-style: italic;
 }
