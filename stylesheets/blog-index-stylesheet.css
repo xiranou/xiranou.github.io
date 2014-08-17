@@ -9,7 +9,6 @@ body{
 }
 
 .wrapper{
-  background-color: rgba(26,127,232,0.35);
   height: 100%;
   padding: 1em 1em 1em 1em;
   margin-top: 5%;
@@ -27,12 +26,19 @@ header{
 header h1{
   font-size: 200%;
   margin-top: 2.08333333%;
-  margin-bottom: 10px;
+  margin-bottom: 1.04%;
 }
 
-nav{margin-top: 2.08333333%;}
+nav{margin-top: 2.08333333%;
+    margin-bottom: 2.08333333%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgba(26,127,232,0.35);}
 
 nav a{text-decoration: none;
+  width: 100%;
 color: #000099;
 font-size: 125%;
 border-radius: 10%;
@@ -46,11 +52,11 @@ nav a:visited{color: #7D2B00;}
 
 nav a:active{background-color: #D2DEFF;}
 
-header li{
+nav li{
   display: inline;
-  margin-right: 1.04166666%;
+  width: auto;
+  margin-right: 2%;
 }
-
 
 .main{
   height: 100%;

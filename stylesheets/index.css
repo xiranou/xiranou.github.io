@@ -9,7 +9,6 @@ body{
 }
 
 .wrapper{
-  background-color: rgba(26,127,232,0.35);
   min-height: 100%;
   padding: 1em 1em 1em 1em;
   margin-top: 5%;
@@ -26,24 +25,22 @@ header{
   /*height: 5em;*/
 }
 
-.main span{
-  color: #A31F2F;
-  font-size: 2em;
-  display: inline-block;
-  padding-left: 0.05em;
-  padding-right: 0.05em;
-  font-family: 'Dancing Script', cursive;
-}
-
 header h1{
   font-size: 200%;
   margin-top: 2.08333333%;
-  margin-bottom: 10px;
+  margin-bottom: 1.04%;
 }
 
-nav{margin-top: 2.08333333%;}
+nav{margin-top: 2.08333333%;
+    margin-bottom: 2.08333333%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgba(26,127,232,0.35);}
 
 nav a{text-decoration: none;
+  width: 100%;
 color: #000099;
 font-size: 125%;
 border-radius: 10%;
@@ -57,11 +54,11 @@ nav a:visited{color: #7D2B00;}
 
 nav a:active{background-color: #D2DEFF;}
 
-header li{
+nav li{
   display: inline;
-  margin-right: 1.04166666%;
+  width: auto;
+  margin-right: 2%;
 }
-
 
 .main{
   height: 100%;
@@ -80,11 +77,32 @@ header li{
   line-height: 2em;
 }
 
+.main span{
+  color: #A31F2F;
+  font-size: 2em;
+  display: inline-block;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.main h1{
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.main p{
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 110%;
+}
+
 .social-icon{
   text-align: center;
   margin-bottom: 5%;
   margin-top: 2.08333333%;
   width: 100%;
+  height: 100%;
 }
 
 .social-icon .container{
