@@ -59,6 +59,7 @@ nav li{
 }
 
 .main{
+  width: 100%;
   height: 100%;
   margin-bottom: 2.08333333%;
   padding-left: 2.08333333%;
@@ -68,6 +69,7 @@ nav li{
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
+  color: #1A2140;
 }
 
 .main .container{
