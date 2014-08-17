@@ -90,8 +90,8 @@ nav li{
 }
 
 .main h1{
-  font-size: 120%;
-  font-weight: bold;
+  font-size: 110%;
+  font-weight: bolder;
   width: 100%;
   white-space: pre-wrap;
 }
@@ -101,6 +101,7 @@ nav li{
   text-indent: 2em;
   /*text-align: center;*/
   font-size: 100%;
+  font-style: italic;
 }
 
 .social-icon{
