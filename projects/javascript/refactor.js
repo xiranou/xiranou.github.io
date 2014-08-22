@@ -1,3 +1,4 @@
+//constructor function
 var locationCreator = function(name, description){
   this.name = name;
   this.description = description;
@@ -50,6 +51,8 @@ var badGuyCreator = function(name, description, health, attack, type, location){
   location.enemies.push(this);
   enemiesAtLarge.push(this);
 };
+
+//creation
 var locationList = [];
 var enemiesAtLarge = [];
 var player = new playerCreator("Red Knight", 'Tall, kinda handsome with wavy blond hair, sort of arrogant and simpleminded. Wears heavy armor painted in red.');
@@ -67,6 +70,7 @@ var darkPriest = new badGuyCreator("Dark Priest", "Dark Priest of Total Darkness
 var goblin1 = new badGuyCreator("Goblin", "Green, tiny, annoying", 1, 5, 'minon', secretLibrary);
 var goblin2 = new badGuyCreator("Goblin", "Green, tiny, annoying", 1, 5, 'minon', secretLibrary);
 
+//action functions
 var encounter = function(location){
   var currentEmemies = location.enemies;
   if (currentEmemies.length>0) {
@@ -190,6 +194,7 @@ var levelCheck = function(){
   if (enemiesAtLarge.length==0) {console.log('You complete this level!');}
 };
 
+//script run
 player.moveTo(treasureRoom);
 player.pickUpAll();
 player.equipAll();
