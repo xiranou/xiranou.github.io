@@ -31,19 +31,20 @@ header h1{
 
 nav{margin-top: 2.08333333%;
     margin-bottom: 2.08333333%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     background-color: rgba(26,127,232,0.35);}
 
 nav a{text-decoration: none;
+  display: inline-block;
   width: 100%;
-color: #000099;
-font-size: 125%;
-border-radius: 10%;
-padding-left: 0.50283333%;
-padding-right: 0.50283333%;}
+  color: #000099;
+  font-size: 125%;
+  border-radius: 10%;
+  padding-left: 0.50283333%;
+  padding-right: 0.50283333%;}
 
 nav a:hover{color: #006600;
 background-color: #6DFFFA;}
@@ -52,10 +53,19 @@ nav a:visited{color: #7D2B00;}
 
 nav a:active{background-color: #D2DEFF;}
 
-nav li{
-  display: inline;
+.main-menu>li{
+  display: inline-block;
   width: auto;
+  height: auto;
   margin-right: 2%;
+}
+
+.sub-menu{
+  position:absolute;
+  visibility:hidden;
+  line-height: 2em;
+  padding:0.5em;
+  background-color: rgba(26,127,232,1);
 }
 
 .main{
