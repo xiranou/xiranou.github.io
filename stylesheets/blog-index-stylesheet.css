@@ -132,7 +132,10 @@ text-decoration: underline;}
 }
 
 .social-icon img:hover{
-  opacity: 0.5;
+  opacity: 0.7;
+  -ms-transform: scale(0.7,0.7);
+  -webkit-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
 }
 
 footer{
