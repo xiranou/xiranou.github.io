@@ -10,6 +10,15 @@ var commandSelector = function(){
     case 'move':
       player.moveTo(); //add prompt to function
       break;
+    case 'pick up':
+      play.pickUpAll();
+      break;
+    case 'equip':
+      player.equipAll();
+      break;
+    case 'attack':
+      player.attackTarget(); //add prompt to function
+      break;
     default:
       alert("no such command");
       break;
