@@ -85,10 +85,12 @@ var encounter = function(location){
 };
 var findItems = function(location){
   var currentItems = location.items;
+  var itemNames = '';
   if (currentItems.length>0) {
     for (idx in currentItems){
-      return('There is a '+currentItems[idx].name+' in this room.');
+      itemNames += ("a "+currentItems[idx].name+", ");
     }
+  return('There is '+itemNames+' in this room.');
   }
   else{return('Nothing left in this room.');}
 };
@@ -220,9 +222,9 @@ var levelCheck = function(){
 
 // //script run
 // player.moveTo(treasureRoom);
-player.currentLocation = treasureRoom;
-console.log(player.pickUpAll());
-console.log(player.currentLocation.items);
+// player.currentLocation = treasureRoom;
+// console.log(player.pickUpAll());
+// console.log(player.currentLocation.items);
 // player.equipAll();
 // player.equipAll();
 // player.moveTo(secretLibrary);
