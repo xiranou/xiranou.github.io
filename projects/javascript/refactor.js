@@ -74,10 +74,12 @@ var goblin2 = new badGuyCreator("Goblin", "Green, tiny, annoying", 1, 5, 'minon'
 //action functions
 var encounter = function(location){
   var currentEmemies = location.enemies;
+  var enemyName = '';
   if (currentEmemies.length>0) {
     for (idx in currentEmemies){
-      return('You encounter '+currentEmemies[idx].name+".");
+      enemyName += ('\n'+currentEmemies[idx].name+'\n');
     }
+  return('You encounter '+enemyName);
   }
   else {
     return('No enemies here.');
