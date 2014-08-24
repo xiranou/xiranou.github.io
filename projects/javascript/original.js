@@ -12,7 +12,7 @@ var playerCreator = function(name, description){
   this.health=150;
   this.items=[];
   this.spells=[];
-  this.currentLocation=tinyCave;
+  this.currentLocation;
   this.attack=0;
   this.blockCharge=0;
 };
@@ -61,7 +61,7 @@ var tinyCave = new locationCreator("Tiny Cave", "Tiny Cave, wet, and full of tin
 var treasureRoom = new locationCreator("Treasure Room","A big chest sits in the middle of the room");
 var secretLibrary = new locationCreator("Secret Library", "A well-lit library...in a cave...");
 var bossRoom = new locationCreator("Boss Room", "Welcome! This is the BOSS ROOM! It's big and has a boss in it!");
-
+player.currentLocation = tinyCave;
 var bigBadSword = new itemCreator("Big Bad Sword","Heavy. Not well crafted but sharp enough to kill a man.", 'weapon', 15, treasureRoom);
 var horribleRedShield = new itemCreator("Horrible Red Shield","Painted in red with a sigil of a boar. Sturdy, but ugly looking round metal shield.", 'shield', 5, treasureRoom);
 var uglyRedBook = new spellBookCreator("Ugly Red Book", 'An ugly looking red book, with some gibberish in it.', "Red Fireball", 1, 10, secretLibrary);

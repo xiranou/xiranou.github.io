@@ -27,7 +27,7 @@ var commandSelector = function(){
 };
 
 var display = function(texToAppend){
-  $("#text-area>p").append(texToAppend);
+  $("#text-area>p").append('\n'+texToAppend);
 };
 
 $(document).ready(main);

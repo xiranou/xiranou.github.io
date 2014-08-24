@@ -12,7 +12,7 @@ var playerCreator = function(name, description){
   this.health=150;
   this.items=[];
   this.spells=[];
-  this.currentLocation=tinyCave;
+  this.currentLocation;
   this.attack=0;
   this.blockCharge=0;
 };
@@ -61,6 +61,7 @@ var tinyCave = new locationCreator("Tiny Cave", "Tiny Cave, wet, and full of tin
 var treasureRoom = new locationCreator("Treasure Room","A big chest sits in the middle of the room");
 var secretLibrary = new locationCreator("Secret Library", "A well-lit library...in a cave...");
 var bossRoom = new locationCreator("Boss Room", "Welcome! This is the BOSS ROOM! It's big and has a boss in it!");
+player.currentLocation = tinyCave;
 
 var bigBadSword = new itemCreator("Big Bad Sword","Heavy. Not well crafted but sharp enough to kill a man.", 'weapon', 15, treasureRoom);
 var horribleRedShield = new itemCreator("Horrible Red Shield","Painted in red with a sigil of a boar. Sturdy, but ugly looking round metal shield.", 'shield', 5, treasureRoom);
@@ -117,17 +118,18 @@ player.moveTo = function(){
   this.currentLocation = selection;
   var encountered = encounter(selection);
   var found = findItems(selection);
-  return('\n'+'You move to '+selection.name+'\n'+encountered+'\n'+found);
+  return('You move to '+selection.name+'\n'+encountered+'\n'+found);
 };
 player.pickUpAll = function(){
   var itemsInLocation = this.currentLocation.items;
+  var itemNames = '';
   if (itemsInLocation.length>0) {
-    for (idx in itemsInLocation){
+    for (idx=0; idx<itemsInLocation.length; idx++){
       this.items.push(itemsInLocation[idx]);
-      return('You pick up '+itemsInLocation[idx].name);}
-      this.currentLocation.items.splice(idx, 1);
+      itemNames += (itemsInLocation[idx].name+" ");
+      this.currentLocation.items.splice(idx, 1);}
+      return('You pick up '+ itemNames);
   } else{return('There\'s nothing to pick up.');}
-  this.currentLocation.items = [];
 };
 player.equipAll = function(){
   var itemsGained = this.items;
@@ -218,7 +220,9 @@ var levelCheck = function(){
 
 // //script run
 // player.moveTo(treasureRoom);
-// player.pickUpAll();
+player.currentLocation = treasureRoom;
+player.pickUpAll();
+console.log(player.currentLocation.items);
 // player.equipAll();
 // player.equipAll();
 // player.moveTo(secretLibrary);
