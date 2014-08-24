@@ -1,4 +1,13 @@
-#command-list>p{
+.wrapper{
+  padding: 1em 1em 1em 1em;
+  line-height: 1.3em;
+}
+.wrapper h1{
+  font-size: 2em;
+}
+.wrapper div{
   white-space: pre-line;
-  line-height: 2em;
+  width: 33.333333%;
+  float: left;
+  text-align: center;
 }
