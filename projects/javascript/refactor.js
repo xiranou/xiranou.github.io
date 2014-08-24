@@ -91,11 +91,33 @@ var found = function(location){
   }
   else{return('Nothing left in this room.');}
 };
-player.moveTo = function(location){
-  this.currentLocation = location;
-  return('You move to '+location.name);
-  encounter(location);
-  found(location);
+var locationMatcher = function(locationPrompt){
+  locationPrompt = locationPrompt.toLowerCase();
+  switch (locationPrompt){
+    case 'tiny cave':
+      return(tinyCave);
+      break;
+    case 'treasure room':
+      return(treasureRoom);
+      break;
+    case 'secret library':
+      return(secretLibrary);
+      break;
+    case 'boss room':
+      return(bossRoom);
+      break;
+    default:
+      alert('No such location.');
+      break;
+  }
+};
+player.moveTo = function(){
+  var locationPrompt = prompt("Enter location.");
+  var selection = locationMatcher(locationPrompt);
+  this.currentLocation = selection;
+  return('You move to '+selection.name);
+  encounter(selection);
+  found(selection);
 };
 player.pickUpAll = function(){
   var itemsInLocation = this.currentLocation.items;

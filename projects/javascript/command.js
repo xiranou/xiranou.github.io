@@ -25,4 +25,8 @@ var commandSelector = function(){
   }
 };
 
+var display = function(param1, param2){
+  block;
+};
+
 $(document).ready(main);
