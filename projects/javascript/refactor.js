@@ -82,7 +82,7 @@ var encounter = function(location){
     return('No enemies here.');
   }
 };
-var find = function(location){
+var found = function(location){
   var currentItems = location.items;
   if (currentItems.length>0) {
     for (idx in currentItems){
@@ -115,9 +115,9 @@ player.moveTo = function(){
   var locationPrompt = prompt("Enter location.");
   var selection = locationMatcher(locationPrompt);
   this.currentLocation = selection;
-  var encountered = encounter(selection);
-  var found = find(selection);
-  return('You move to '+selection.name+'\n'+encountered+'\n'+found);
+  return('You move to '+selection.name);
+  encounter(selection);
+  found(selection);
 };
 player.pickUpAll = function(){
   var itemsInLocation = this.currentLocation.items;
