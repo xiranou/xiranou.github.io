@@ -117,7 +117,7 @@ player.moveTo = function(){
   this.currentLocation = selection;
   var encountered = encounter(selection);
   var found = findItems(selection);
-  return('You move to '+selection.name+'\n'+encountered+'\n'+found);
+  return('\n'+'You move to '+selection.name+'\n'+encountered+'\n'+found);
 };
 player.pickUpAll = function(){
   var itemsInLocation = this.currentLocation.items;

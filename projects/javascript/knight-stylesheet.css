@@ -11,3 +11,8 @@
   float: left;
   text-align: center;
 }
+#text-area{
+  white-space: pre-line;
+  padding: 1em;
+  line-height: 1.3em;
+}

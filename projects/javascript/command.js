@@ -1,6 +1,7 @@
 var main = function(){
   $("#start").click(function(){
-    commandSelector;
+    var texToAppend = commandSelector();
+    display(texToAppend);
   });
 };
 
@@ -8,16 +9,16 @@ var commandSelector = function(){
   var command = prompt("enter a command.");
   switch (command){
     case 'move':
-      player.moveTo(); //add prompt to function
+      return player.moveTo(); //add prompt to function
       break;
     case 'pick up':
-      play.pickUpAll();
+      return player.pickUpAll();
       break;
     case 'equip':
-      player.equipAll();
+      return player.equipAll();
       break;
     case 'attack':
-      player.attackTarget(); //add prompt to function
+      return player.attackTarget(); //add prompt to function
       break;
     default:
       alert("no such command");
@@ -25,8 +26,8 @@ var commandSelector = function(){
   }
 };
 
-// var display = function(valueReturned){
-//   $(valueReturned).appendTo($(".text-area>p"));
-// };
+var display = function(texToAppend){
+  $("#text-area>p").append(texToAppend);
+};
 
 $(document).ready(main);
