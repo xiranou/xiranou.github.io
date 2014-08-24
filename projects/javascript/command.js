@@ -1,6 +1,6 @@
 var main = function(){
   $("#start").click(function(){
-    commandSelector();
+    commandSelector;
   });
 };
 
@@ -25,8 +25,8 @@ var commandSelector = function(){
   }
 };
 
-var display = function(param1, param2){
-  block;
-};
+// var display = function(valueReturned){
+//   $(valueReturned).appendTo($(".text-area>p"));
+// };
 
 $(document).ready(main);
