@@ -130,15 +130,17 @@ player.pickUpAll = function(){
   if (itemsInLocation.length>0) {
     for (idx=0; idx<itemsInLocation.length; idx++){
       this.items.push(itemsInLocation[idx]);
-      itemNames += (itemsInLocation[idx].name+" ");
-      this.currentLocation.items.splice(idx, 1);}
-      return('You pick up '+ itemNames);
+      itemNames += ("\n"+itemsInLocation[idx].name);
+      this.currentLocation.items=[];}
+  return('You pick up: '+ itemNames);
   } else{return('There\'s nothing to pick up.');}
 };
 player.equipAll = function(){
   var itemsGained = this.items;
+  var itemNames = '';
   for (idx in itemsGained){
     var item = itemsGained[idx];
+    itemNames += ('\n'+itemsGained[idx].name);
     switch (item.type){
       case 'weapon':
       this.attack = item.attack;
@@ -150,10 +152,11 @@ player.equipAll = function(){
       this.spells.push(item);
       break;
       default:
-      return('You have nothing to equip.');
+      alert('You have nothing to equip.');
       break;
     }
   }
+  return ('You equip: '+itemNames);
 };
 player.attackTarget = function(enemy,selectAttack){
   var enemiesInSight = this.currentLocation.enemies;
@@ -223,17 +226,7 @@ var levelCheck = function(){
 };
 
 // //script run
-// player.moveTo(treasureRoom);
 // player.currentLocation = treasureRoom;
 // console.log(player.pickUpAll());
-// console.log(player.currentLocation.items);
 // player.equipAll();
-// player.equipAll();
-// player.moveTo(secretLibrary);
-// player.attackTarget(goblin1);
-// player.attackTarget(goblin2);
-// player.pickUpAll();
-// player.equipAll();
-// player.moveTo(bossRoom);
-// player.attackTarget(darkPriest, 0);
-// player.attackTarget(darkPriest);
+// console.log(player.attack);
