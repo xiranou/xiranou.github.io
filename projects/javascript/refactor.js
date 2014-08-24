@@ -221,7 +221,7 @@ var levelCheck = function(){
 // //script run
 // player.moveTo(treasureRoom);
 player.currentLocation = treasureRoom;
-player.pickUpAll();
+console.log(player.pickUpAll());
 console.log(player.currentLocation.items);
 // player.equipAll();
 // player.equipAll();
