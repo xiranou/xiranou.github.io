@@ -25,6 +25,7 @@
       <code>Hash.included_modules #=> [Enumerable, Kernel]</code>
 
       The <code>map</code> belongs in the enumerable module and it is the non-descrutive twin of <code>map!</code>(more on the evil twin later). It accepts an enumerable object, such as array or hash, and a block of code. It runs the block for each element inside the object. Since it is non-desctrutive, meaning it will not alter the object passed on it, the results from the block are stored inside a new array. Like so:
+
       <code>original_array = [1,2,3]</code>
       <code>new_array = original_array.map{|element| element+=1}</code>
       <code>original_array #=>[1,2,3]</code>
@@ -33,11 +34,13 @@
       As you can see from the example, the original array contains 3 elements, when passed on <code>map</code> with the block <code>element+=1</code>. The block is run by each element, increasing each by one, and stores the results inside a new array which we set to the variable: <code>new_array</code>, and the <code>original_array</code> stays intact.
 
       Now onto the evil twin, <code>map!</code>. It does the same thing as <code>map</code>, but destructively. A destructive method will alerts the original object, instead of returning a new object, it returns the modified object.
+
       <code>original_array = [1,2,3]</code>
       <code>new_array = original_array.map!{|element| element+=1}</code>
       <code>original_array #=>[2,3,4]</code>
       <code>new_array #=> [2,3,4]</code>
-      From the example above we can see that <code>original_array</code> is being altered even if we set a variable to catch the results. It is replacing each element by the result return from the given block, and returns self (the original_array).
+
+      From the example above we can see that <code>original_array</code> is being altered even if we set a variable to catch the results. It is replacing each element by the result return from the given block, and returns self (the original_array). This also means that the variable <code>new_array</code> is pointing at the same object as <code>original_array</code>.
     </p>
   </div>
 
