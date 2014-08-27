@@ -15,12 +15,29 @@
   <!-- Main Body -->
   <div class="blog">
     <h4 class='title'>
-      Ruby Enumerable: .map</h4>
+      Ruby Enumerable: map</h4>
     <p class='sub-title'>
       Week-4 Technical Blog
       08/27/2014</p>
     <p id='post'>
-      <!-- Post_text -->
+      Ruby has modules, which can be think of as containers or tool-boxes that stores methods. An enumerable method can be use by a class that has a defined <code>each</code> method. You can also find out which class uses enumerable like so:
+      <code>Array.included_modules #=> [Enumerable, Kernel]</code>
+      <code>Hash.included_modules #=> [Enumerable, Kernel]</code>
+
+      The <code>map</code> belongs in the enumerable module and it is the non-descrutive twin of <code>map!</code>(more on the evil twin later). It accepts an enumerable object, such as array or hash, and a block of code. It runs the block for each element inside the object. Since it is non-desctrutive, meaning it will not alter the object passed on it, the results from the block are stored inside a new array. Like so:
+      <code>original_array = [1,2,3]</code>
+      <code>new_array = original_array.map{|element| element+=1}</code>
+      <code>original_array #=>[1,2,3]</code>
+      <code>new_array #=> [2,3,4]</code>
+
+      As you can see from the example above, the original array contains 3 elements, when passed on <code>map</code> with the block <code>element+=1</code>. The block is run by each element, increasing each by one, and stores the results inside a new array which we set to the variable: <code>new_array</code>, and the <code>original_array</code> stays intact.
+
+      Now onto the evil twin, <code>map!</code>. It does the same thing as <code>map</code>, but destructively. A destructive method will alerts the original object, instead of returning a new object, it returns the modified object.
+      <code>original_array = [1,2,3]</code>
+      <code>new_array = original_array.map!{|element| element+=1}</code>
+      <code>original_array #=>[2,3,4]</code>
+      <code>new_array #=> [2,3,4]</code>
+      From the example we can see that even if we set a variable to catch the result from <code>map!</code>, the <code>original_array</code> is still altered.
     </p>
   </div>
 

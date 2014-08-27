@@ -46,16 +46,14 @@ header p{
   font-size: 125%;
   line-height: 150%;
   white-space: pre-line;
-/*  font-family: "Comic Sans MS", cursive, sans-serif;
-*/}
+}
 
 #post{
   text-align: justify;
   white-space: pre-wrap;
   text-indent: 2em;
   font-size: 125%;
-/*  font-family: "Comic Sans MS", cursive, sans-serif;
-*/  line-height: 160%;
+  line-height: 160%;
   padding-left: 2.0833333333%;
   padding-right: 1.04166666666%;
 }
@@ -64,10 +62,12 @@ header p{
 }
 #post code{
   background-color: #FF833D;
-  white-space: pre;
+  white-space: pre-line;
   display: inline-block;
-  margin-left: 3.125%;
-  width: 40%;
+  text-align: left;
+  text-indent: 0;
+  width: auto;
+  height: auto;
 }
 
 #post img{
