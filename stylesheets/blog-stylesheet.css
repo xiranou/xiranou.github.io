@@ -92,6 +92,8 @@ nav>ul{
 
 nav a{
   text-decoration: none;
+  white-space: pre-line;
+  display: inline-block;
 }
 
 a{
