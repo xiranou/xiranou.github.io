@@ -61,13 +61,13 @@ header p{
   font-size: 156.25%;
 }
 #post code{
-  background-color: #D8D8D8;
+  /*background-color: #D8D8D8;*/
+  border: 0.15em dotted #B9AEE8;
   white-space: pre-line;
   display: inline-block;
   text-align: left;
   text-indent: 0;
   width: auto;
-  height: auto;
 }
 
 #post img{
