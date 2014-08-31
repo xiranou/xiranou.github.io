@@ -107,6 +107,7 @@ nav>ul{
   border: 0.1em solid black;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  background-color: #DFF0F3;
   }
 nav a{
   text-decoration: none;
