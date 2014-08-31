@@ -90,9 +90,27 @@ nav>ul{
   line-height: 250%;
 }
 
+#sub-menu{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#sub-menu li{ position: relative;}
+#sub-menu li ul{
+  position: absolute;
+  right: 85%;
+  top: -90%;
+  display: none;
+}
+#sub-menu li:hover ul{display: block;}
+#sub-menu li ul{
+  border: 0.1em solid black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  }
 nav a{
   text-decoration: none;
-  white-space: pre-line;
+  white-space: pre;
   display: inline-block;
 }
 
