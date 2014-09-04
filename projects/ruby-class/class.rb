@@ -1,16 +1,16 @@
 class Rectangle
-  attr_reader :height, :width
-  def initialize(height, width)
-    @height = height
+  attr_reader :length, :width
+  def initialize(length, width)
+    @length = length
     @width = width
   end
 
   def perimeter
-    (@height + @width) * 2
+    (@length + @width) * 2
   end
 
   def area
-    @height * @width
+    @length * @width
   end
 end
 
@@ -20,11 +20,21 @@ p Rectangle.instance_method(:initialize).arity == 2
 p Rectangle.instance_method(:perimeter).arity == 0
 p Rectangle.instance_method(:area).arity == 0
 # can only read but not write
-p Rectangle.method_defined?(:height) == true
-p Rectangle.method_defined?(:height=) == false
+p Rectangle.method_defined?(:length) == true
+p Rectangle.method_defined?(:length=) == false
 p Rectangle.method_defined?(:width) == true
 p Rectangle.method_defined?(:width=) == false
 
 rect_one = Rectangle.new(10,5)
+p rect_one.length == 10
+p rect_one.width == 5
 p rect_one.perimeter == 30
 p rect_one.area == 50
+class Ruler
+  def measurement(rectangle)
+    "This rectangle has length of #{rectangle.length} and width of #{rectangle.width}."
+  end
+end
+
+ruler = Ruler.new
+p ruler.measurement(rect_one) == "This rectangle has length of 10 and width of 5."
