@@ -33,12 +33,12 @@
       The blueprint, a Rectangle class, has an initialize method that set the object's attributes: length and width. A method to calculate the perimeter and another to calculate the area.
 
        <!-- code -->
-      <img src="../imgs/ruby-class-rectangle.png" alt="ruby-class-rectangle">
+      <img src="../imgs/rectangle_class_ruby.png" alt="ruby-class-rectangle">
 
       When a rectangle object is being created, the initialize method within the class takes two arguments and set the object's attributes accordingly. These attributes are called the instance-variables which can be used by methods within this class for this particular object (remember that different objects will have different values (data) for its attributes). Now that an rectangle object has been created, you can call the methods from within its class. As you can see, both perimeter and area methods produces outcome that depends on the object's length and width.
 
       <!-- code -->
-      <img src="../imgs/rectangle-methods.png" alt="rectangle-methods">
+      <img src="../imgs/rectangle_method.png" alt="rectangle-methods">
 
       Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are only accessible by the methods of that object. First, we need to change that by giving our class a getter method that returns the desired instance-variable. This can be done by using attr_reader or actually write out the within the class.
       <!-- code   -->
