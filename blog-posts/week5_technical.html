@@ -38,16 +38,16 @@
       <!-- code -->
       <img src="../imgs/rectangle_method.png" alt="rectangle-methods">
 
-      Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are living inside the scope of the object. Only a method that belongs to its class can gain access to them. So what if some other objects want to take a look at these variables? We will need to give our class a getter method that returns the desired instance-variable. This can be done by using attr_reader or actually write out the method.
+      Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are living inside the scope of the object, only a method that belongs to its class can gain access to them. So what if some other objects want to take a look at these variables? We will need to give our class a getter method that returns the desired instance-variable. This can be done by using attr_reader or actually write out the method.
       <!-- code   -->
       <img src="../imgs/attr_reader.png" alt="attr_reader">
       <img src="../imgs/attr_reader_2.png" alt="attr_reader_2">
 
-      Now, a method outside of the class can get read the instance variables of objects from the rectangle class. Say we have a ruler object from a ruler class that has a method which will return the length and width of a rectangle.
+      Now our rectangle object has methods that returns its instance-variables. Say we have a ruler object from a ruler class that has a method which will call those two methods on our rectangle and return the length and width values as a string.
       <!-- code -->
       <img src="../imgs/ruler.png" alt="ruler">
 
-      The ruler can get the measurements from our rectangle only because we allowed those instance-variables to be accessible from outside its class. Similarity, we can have the measurements of the rectangle object to be changed from outside of its class via 'attr_writer' (or a setter method) and even do both at the same time via 'attr_accessor' (both getter and setter method). However, we need to be careful when granting access to instance-variables since not every attribute of an object are meant to be written (or even read, think of a credit-card object) by an outside class.
+      The ruler can get the measurements from our rectangle only because we allowed those instance-variables to be accessible as values returned by getter methods. Similarity, we can have the measurements of the rectangle object to be changed from outside of its class via 'attr_writer' (or a setter method) and even do both at the same time via 'attr_accessor' (both getter and setter method). However, we need to be careful when granting access to instance-variables since not every attribute of an object are meant to be written (or even read, think of a credit-card object) by an outside class.
     </p>
   </div>
 
