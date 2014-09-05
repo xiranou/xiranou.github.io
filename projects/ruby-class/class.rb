@@ -1,5 +1,12 @@
 class Rectangle
   attr_reader :length, :width
+  # is the same as
+  # def length
+  #   @length
+  # end
+  # def width
+  #   @width
+  # end
   def initialize(length, width)
     @length = length
     @width = width
