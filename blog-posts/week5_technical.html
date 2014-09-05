@@ -30,25 +30,25 @@
 
       Now lets take a look at another simple object, an rectangle. What does a rectangle have? 4 sides, 2 shorter ones we call the width and 2 longer ones we call length. How does it behave? Stuff can be put in it (the area) and people can walk around it (the perimeter).
 
+      The blueprint, a Rectangle class, has an initialize method that set the object's attributes: length and width. A method to calculate the perimeter and another to calculate the area.
+
+       <!-- code -->
+      <img src="../imgs/ruby-class-rectangle.png" alt="ruby-class-rectangle">
+
+      When a rectangle object is being created, the initialize method within the class takes two arguments and set the object's attributes accordingly. These attributes are called the instance-variables which can be used by methods within this class for this particular object (remember that different objects will have different values (data) for its attributes). Now that an rectangle object has been created, you can call the methods from within its class. As you can see, both perimeter and area methods produces outcome that depends on the object's length and width.
+
       <!-- code -->
+      <img src="../imgs/rectangle-methods.png" alt="rectangle-methods">
 
-      Consider the code above. The blueprint, a rectangle class, has an initialize method that set the object's attributes: length and width. A method to calculate the perimeter and another to calculate the area.
-
-      <!-- code -->
-
-      When a rectangle object is being created, the initialize method within the class takes two arguments and set the object's attributes accordingly. These attributes are called the instance-variables which can be used by methods within this class for this particular object (remember that different objects will have different values (data) for its attributes).
-
-      <!-- code -->
-
-      Now that an rectangle object has been created, you can call the methods from within its class. As you can see, both perimeter and area methods produces outcome that depends on the object's length and width.
-
-      Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are only accessible by the methods of that object. We can change that by giving our class a getter method, which can be done by using attr_reader or defining a method that returns the desired instance-variable.
-
+      Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are only accessible by the methods of that object. First, we need to change that by giving our class a getter method that returns the desired instance-variable. This can be done by using attr_reader or actually write out the within the class.
       <!-- code   -->
+      <img src="../imgs/attr_reader.png" alt="attr_reader">
+      <img src="../imgs/attr_reader_2.png" alt="attr_reader_2">
 
       Now, a method outside of the class can get access to the instance variable of objects from the rectangle class. Consider that an object from a ruler class that has a method that will return the length and width of a rectangle.
 
       <!-- code -->
+      <img src="../imgs/ruler.png" alt="ruler">
 
       Of course, the ruler can get the measurements from our rectangle is only because we allowed the measurements to be read from outside the class. Similarity, we can have the measurements of the rectangle object to be changed by outside of its class via attr_writer (or a setter method) and even do both via attr_accessor (a getter and a setter method). Surely, there are many reasons that we need to protect the measurements of our dear little rectangle that nothing outside of its class are able to change it's measurements after creation.
 

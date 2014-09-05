@@ -26,10 +26,12 @@ p Rectangle.method_defined?(:width) == true
 p Rectangle.method_defined?(:width=) == false
 
 rect_one = Rectangle.new(10,5)
-p rect_one.length == 10
-p rect_one.width == 5
-p rect_one.perimeter == 30
-p rect_one.area == 50
+rect_one.perimeter # =>  30
+rect_one.area # =>  50
+rect_one.length # =>  10
+rect_one.width # =>  5
+
+
 class Ruler
   def measurement(rectangle)
     "This rectangle has length of #{rectangle.length} and width of #{rectangle.width}."
@@ -37,4 +39,4 @@ class Ruler
 end
 
 ruler = Ruler.new
-p ruler.measurement(rect_one) == "This rectangle has length of 10 and width of 5."
+ruler.measurement(rect_one) # =>  "This rectangle has length of 10 and width of 5."
