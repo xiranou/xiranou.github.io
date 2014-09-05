@@ -27,9 +27,9 @@ header p{
 }
 
 .blog{
-  padding: 1.04166666666% 1.04166666666% 1.04166666666% 1.04166666666%;
+  padding: 1.04166666666% 1.04166666666% 1.04166666666% 3.04166666666%;
   float: left;
-  width: 80%;
+  width: 70%;
   height: 100%;
   /*overflow: scroll;*/
   text-align: center;
@@ -43,8 +43,8 @@ header p{
 */}
 
 .sub-title{
-  font-size: 125%;
-  line-height: 150%;
+  font-size: 110%;
+  line-height: 100%;
   white-space: pre-line;
 }
 
@@ -52,7 +52,7 @@ header p{
   text-align: justify;
   white-space: pre-wrap;
   text-indent: 2em;
-  font-size: 125%;
+  font-size: 120%;
   line-height: 160%;
   padding-left: 2.0833333333%;
   padding-right: 1.04166666666%;
@@ -80,7 +80,7 @@ header p{
 
 .side {
   float: right;
-  width: 15%;
+  width: 20%;
   height: 100%;
 }
 
