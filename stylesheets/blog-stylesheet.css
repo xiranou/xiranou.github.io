@@ -72,8 +72,10 @@ header p{
 
 #post img{
   display: inline-block;
-  margin-left: 2.083333333%;
-  width: 30%;
+  margin-left: 4.083333333%;
+  width: auto;
+  max-height: 50%;
+  min-height: 10.55%;
 }
 
 .side {
