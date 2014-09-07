@@ -23,8 +23,8 @@
     <p id='post'>
       Ruby has built-in modules, which can be think of as containers or tool-boxes that stores methods. An enumerable method can be use by a class that has a defined <code>each</code> method. You can also find out which class uses enumerable like so:
 
-      <code>Array.included_modules #=> [Enumerable, Kernel]</code>
-      <code>Hash.included_modules #=> [Enumerable, Kernel]</code>
+      <code>Array.included_modules #=> [Enumerable, Kernel]
+      Hash.included_modules #=> [Enumerable, Kernel]</code>
 
       The <code>map</code> belongs in the enumerable module and it is the non-destructive twin of <code>map!</code>(more on the evil twin later). It accepts an enumerable object, such as array or hash, and a block of code. It runs the block for each element inside the object. Since it is non-destructive, meaning it will not alter the object passed on it, the results from the block are stored inside a new array. Like so:
 
