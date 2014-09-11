@@ -16,12 +16,40 @@
   <div class="blog">
     <h4 class='title'>
       Ruby Variable Scope
-      (A, a, $, @, @@)</h4>
+      (a, $, @, @@, A)</h4>
     <p class='sub-title'>
       Week-6 Technical Blog
       09/11/14</p>
     <p id='post'>
-      <!-- Post_text -->
+      A variable scope simply means where in a program that a variable is accessible. Ruby has four type of variable scopes: local, instance, class, and global. Each is declared by using a special character before its name. Ruby also has one constant type variable. It is recommend to use snake_case for naming in Ruby.
+
+      Let's start with the most common variable type, local variables. Local variable MUST start with a Lower Case Letter or with an underscore:
+      <!-- codes -->
+      '_Variable = 1'
+      'defined?(_Variable) => local-variable'
+      'variable = 10'
+      'defined?(variable) => local-variable'
+      Local variables lives inside the code block of its declaration. It's range varies from inside a class, a module, a method, a loop, or a block of code. Hence the name, living locally inside its scope of declaration. When an uninitialized (no value assigned) local variable is referenced, it will be interpreted as a call to a method that has no arguments.
+       For example:
+      <!-- codes -->
+
+      Next lets look at global variables. They are defined by prefixing '$' to its name. They must be initialized before using, otherwise it will produce an error.
+      <!-- codes -->
+
+      They are pretty much the big brother/sister of local variables. They live inside the scope of a program. Regardless of where they are defined, they can be accessed anywhere within the program.
+      <!-- codes -->
+
+      Now onto instance variables. Their names are prefixed with '@'. An uninitialized instance variable will have the value nil and produce an warning.
+      <!-- codes -->
+
+      They live inside a specific instance of a class. For example, you have a class that initializes its instance with a variable '@number'. Every object of this class will carry a copy of '@number'. These copies are independent from one another, meaning that the changes you made to one object's '@number' will not affect the others.
+      <!-- codes -->
+
+      Coming up is the class variable. They are declared with prefixing two '@' to its name like so '@@variable'. Class variables must be initialized at creation, otherwise it will raise an error when referenced.
+      <!-- codes -->
+
+      They live inside a class and shared amongst all instances of the class, and all its descendants. Meaning that an instance, or an instance form its descendant makes a change to the global variable, its value is changed for other instance objects.
+      <!-- codes -->
     </p>
   </div>
 
