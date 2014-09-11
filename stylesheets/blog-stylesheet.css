@@ -36,9 +36,10 @@ header p{
 }
 
 .title{
-  font-size: 187.5%;
+  font-size: 180%;
   font-weight: bold;
   margin-top: 2.0833333333%;
+  white-space: pre-line;
 /*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 */}
 
