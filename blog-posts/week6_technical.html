@@ -25,28 +25,22 @@
 
       Let's start with the most common variable type, local variables. Local variable MUST start with a Lower Case Letter or with an underscore:
       <!-- codes -->
-
+      <img src="../imgs/week_6/local_1.png" alt="local_1">
       Local variables lives inside the code block of its declaration. It's range varies from inside a class, a module, a method, a loop, or a block of code. Hence the name, living locally inside its scope of declaration. When an uninitialized (no value assigned) local variable is referenced, it will be interpreted as a call to a method that has no arguments. For example:
       <!-- codes -->
-
-      Next lets look at global variables. They are defined by prefixing '$' to its name. They must be initialized before using, otherwise it will produce an error.
+      <img src="../imgs/week_6/local_2.png" alt="local_2">
+      Next lets look at global variables. They are defined by prefixing '$' to its name. They must be initialized before using, otherwise it will produce an error. They are pretty much like the big brother/sister of local variables. They live inside the scope of a program. Regardless of where they are defined, they can be accessed anywhere from within the program. Be careful when using global variables, since they can be viewed and changed anywhere within a program, it will make tracking down bugs difficult.
       <!-- codes -->
-
-      They are pretty much like the big brother/sister of local variables. They live inside the scope of a program. Regardless of where they are defined, they can be accessed anywhere from within the program. Be careful when using global variables, since they can be viewed and changed anywhere within a program, it will make tracking down bugs difficult.
+      <img src="../imgs/week_6/global_2.png" alt="global_2">
+      Now onto instance variables. Their names are prefixed with '@'. An uninitialized instance variable will have the value nil and produce an warning. They live inside a specific instance of a class. For example, you have a class that initializes its instance with a variable '@number'. Every object of this class will carry a copy of '@number'. These copies are independent from one another, meaning that the changes you made to one object's '@number' will not affect the others.
       <!-- codes -->
-
-      Now onto instance variables. Their names are prefixed with '@'. An uninitialized instance variable will have the value nil and produce an warning.
-
-      They live inside a specific instance of a class. For example, you have a class that initializes its instance with a variable '@number'. Every object of this class will carry a copy of '@number'. These copies are independent from one another, meaning that the changes you made to one object's '@number' will not affect the others.
+      <img src="../imgs/week_6/instance_1.png" alt="instance_1">
+      Coming up is the class variable. They are declared with prefixing two '@' to its name like so: '@@variable'. Class variables must be initialized at creation, otherwise it will raise an error when referenced. They live inside a class and shared amongst all instances of the class, and all its descendants. Meaning that an instance, or an instance form its descendant makes a change to the global variable, its value is changed for other instance objects.
       <!-- codes -->
-
-      Coming up is the class variable. They are declared with prefixing two '@' to its name like so: '@@variable'. Class variables must be initialized at creation, otherwise it will raise an error when referenced.
-
-      They live inside a class and shared amongst all instances of the class, and all its descendants. Meaning that an instance, or an instance form its descendant makes a change to the global variable, its value is changed for other instance objects.
-      <!-- codes -->
-
+      <img src="../imgs/week_6/class_1.png" alt="class_1">
       Lastly, constants. Constants are declared with an Upper Case Letter. Constants may not be created inside methods, referencing to an uninitialized constant will raise an error. Like the name suggests, its value should not be changed once initialized. However, Ruby differs from many other programming languages that it will allow constant value to be changed after initialization and only produce a warning. Constants declared outside of a class or module have a global scope, while those declared within has the scope within the context of the class or module.
       <!-- codes -->
+      <img src="../imgs/week_6/constant_1.png" alt="constant_1">
     </p>
   </div>
 
