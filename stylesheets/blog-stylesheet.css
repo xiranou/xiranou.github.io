@@ -10,6 +10,7 @@ header{
   margin-bottom: 5.208333333%;
   border-bottom: thick dotted black;
   text-align: center;
+  white-space: pre-wrap;
 /*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 */}
 
@@ -31,7 +32,6 @@ header p{
   float: left;
   width: 70%;
   height: 100%;
-  /*overflow: scroll;*/
   text-align: center;
 }
 
@@ -40,14 +40,11 @@ header p{
   font-weight: bold;
   margin-top: 2.0833333333%;
   margin-bottom: 2.0833333333%;;
-  white-space: pre-line;
-/*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-*/}
+}
 
 .sub-title{
   font-size: 110%;
   line-height: 100%;
-  white-space: pre-line;
 }
 
 #post{
@@ -59,18 +56,18 @@ header p{
   padding-left: 2.0833333333%;
   padding-right: 1.04166666666%;
 }
-#post b{
-  font-size: 156.25%;
-}
-
+#post b{font-size: 156.25%;}
+#post em{
+  font-style: italic;
+  font-size: 80%;
+  color: #261C1B;
+  background-color: #A64236;
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+  border-radius: 30%;}
 #post code{
-  /*background-color: #D8D8D8;*/
-  /*border: 0.15em dotted #B9AEE8;*/
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  white-space: pre-line;
-  display: inline-block;
-  text-indent: 0;
+  padding-left: 10%;
+  display: block;
   width: auto;
 }
 
