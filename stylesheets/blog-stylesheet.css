@@ -6,13 +6,11 @@ body{
 }
 
 header{
-  margin-top: 5.208333333%;
-  margin-bottom: 5.208333333%;
+  margin-top: 2.208333333%;
+  margin-bottom: 1.208333333%;
   border-bottom: thick dotted black;
   text-align: center;
-  white-space: pre-wrap;
-/*  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-*/}
+}
 
 header h3{
   font-size: 218.75%;
@@ -24,7 +22,7 @@ header h3{
 header p{
   font-size: 125%;
 /*  font-family: "Comic Sans MS", cursive, sans-serif;*/
-  margin-bottom: 5.208333333%;
+  margin-bottom: 2.208333333%;
 }
 
 .blog{
