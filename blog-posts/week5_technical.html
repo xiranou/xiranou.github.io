@@ -20,7 +20,8 @@
   <div class="blog">
     <h4 class='title'>Ruby, Class</h4>
     <p class='sub-title'>Week-4 Technical Blog</p>
-    <p id='post'>
+    <div id="post">
+      <p>
       In object oriented programming(OOP), codes are written to model objects in the real world. Such object will have its own attributes and behaviors. While the state(data) within the object will set its attributes, the methods(codes) set the behaviors.
 
       A class in OOP is simply the blueprint, a constructor for objects. While you create an object, it is an instance of its class. Say that you are creating a coin, an object that has attributes like shape, weight, height(maybe), the material it created from(colors, maybe), and the emblems on its head and tail. All these attribute can be grouped into a class, a blueprint for all coin creations, and each individual coin is an instance of this class. A coin has certain behaviors when it being carried in a pocket, spend in a transaction, or thrown high up in the air. All these actions will produce something according to the behaviors of the coin. How will a coin that has a weight of X behave while being toss? What can you exchange for with a dollar coin? These are essentially methods within the coin class that returns something when these actions are called for.
@@ -92,7 +93,8 @@
         ruler.measurement(rect_one) # =>  "This rectangle has length of 10 and width of 5."
       </code>
       The ruler can get the measurements from our rectangle only because we allowed those instance-variables to be accessible via values returned by getter methods. Similarity, we can have the measurements of the rectangle object to be changed from outside of its class using 'attr_writer' (or a setter method) and even do both at the same time with 'attr_accessor' (both getter and setter method). However, we need to be careful when granting access to instance-variables since not every attribute of an object are meant to be written (or even read, think of a credit-card object) by an outside class.
-    </p>
+      </p>
+    </div>
   </div>
 
   <!-- Navigation -->

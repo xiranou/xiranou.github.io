@@ -20,8 +20,8 @@
   <div class="blog">
     <h4 class='title'>SQL Injection</h4>
     <p class='sub-title'>Week-7 Technical Blog</p>
-    <p id='post'>
-      SQL Injection is a technique use by malicious attackers to inject SQL commands via user inputs. A successful attack can read and modify sensitive data from database or even perform administrative operations such as shutting down the DBMS (Database management system).
+    <div id="post">
+      <p>SQL Injection is a technique use by malicious attackers to inject SQL commands via user inputs. A successful attack can read and modify sensitive data from database or even perform administrative operations such as shutting down the DBMS (Database management system).
 
       SQL Injection attacks are very common. When a user input is not validated and is being use in a SQL statement, it becomes vulnerable to an SQL Injection attack. For example, if a SQL statement is written like this:
 
@@ -33,9 +33,8 @@
 
       SQL Injection is very dangerous indeed, but there are ways to combat this issue. One of them would be setting up a blacklist to search against SQL Injection attacks. However, this is not a efficient way to combat this issue. Words and characters like 'delete', 'drop', ';', and '=' are very commonly used. Also, it is perfectly legal for a database filed to contain SQL statements.
 
-      One proven way to protect your database from SQL Injections is to use SQL parameters. The parameters are marked with '@' in a SQL statement. Using parameters will let the SQL engine to treat them literally instead of executing them as part of a statement. For example, if we change our previous statement string to 'SELECT * FROM table_1 WHERE user_id = @input_id', when the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the part 'OR 1=1' as a part of the statement.
-
-    </p>
+      One proven way to protect your database from SQL Injections is to use SQL parameters. The parameters are marked with '@' in a SQL statement. Using parameters will let the SQL engine to treat them literally instead of executing them as part of a statement. For example, if we change our previous statement string to 'SELECT * FROM table_1 WHERE user_id = @input_id', when the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the part 'OR 1=1' as a part of the statement.</p>
+    </div>
   </div>
 
   <!-- Navigation -->
