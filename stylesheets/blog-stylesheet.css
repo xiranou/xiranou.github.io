@@ -31,7 +31,8 @@ header p{
   width: 70%;
   height: 100%;
   text-align: center;
-  background-color: #17A3A5;
+  background-color: #068587;
+  border-radius: 5%;
 }
 
 .title{
@@ -46,6 +47,7 @@ header p{
   line-height: 100%;
   margin-bottom: 3.0833333333%;
 }
+#post{padding-bottom: 1%;}
 #post p{
   text-align: justify;
   white-space: pre-wrap;
@@ -142,6 +144,7 @@ nav a:hover{
   clear: both;
   text-align: center;
   margin: 2.083333333%;
+  /*border-top:thin dotted black;*/
 }
 
 .social-icon .container{
