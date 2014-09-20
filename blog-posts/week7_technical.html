@@ -36,7 +36,7 @@
       SQL Injection is very dangerous indeed, but there are ways to combat this issue. One of them would be setting up a blacklist to search against SQL Injection attacks. However, this is not an efficient way to combat this issue. Words and characters like 'delete', 'drop', ';', and '=' are very commonly used. Also, it is perfectly legal for a database filed to contain SQL statements.
 
       One proven way to protect your database from SQL Injections is to use SQL parameters. The parameters are marked with '@' in a SQL statement. Using parameters will let the SQL engine to treat them literally instead of executing them as part of a statement. For example, if we change our previous statement string to:
-      <code class="prettyprint">sql_statement = "SELECT * FROM table_1 WHERE user_id = @0"
+      <code class="prettyprint">sql_statement = "SELECT * FROM table_1 WHERE user_id = ?"
         db.Execute(sql_statement, user_input)</code>
       When the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the part 'OR 1=1' as a part of the statement.</p>
     </div>
