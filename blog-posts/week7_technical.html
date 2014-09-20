@@ -38,7 +38,7 @@
       One proven way to protect your database from SQL Injections is to use SQL parameters. The parameters are marked with '@' in a SQL statement, while in Ruby, you can use '?' as a placeholder for the parameter. Using parameters will let the SQL engine to treat them literally instead of executing them as part of a statement. For example, if we change our previous statement string to:
       <code class="prettyprint">sql_statement = "SELECT * FROM table_1 WHERE user_id = ?"
         db.Execute(sql_statement, user_input)</code>
-      When the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the part 'OR 1=1' as a part of the statement.</p>
+      When the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the 'OR 1=1' as a part of the statement.</p>
     </div>
   </div>
 
