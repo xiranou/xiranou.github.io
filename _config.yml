@@ -1,0 +1,12 @@
+# Site settings
+title: \@riceynoodle
+name: Xiran Ou
+email: xiranou@gmail.com
+description: > # Xiran Ou's Bizarre Adventures
+baseurl: "/xiranou.github.io" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown

@@ -24,8 +24,8 @@ header{
 }
 
 header h1{
-  margin-top: 2.08333333%;
   font-size: 200%;
+  margin-top: 2.08333333%;
   margin-bottom: 1.04%;
 }
 
@@ -68,36 +68,48 @@ nav a:active{background-color: #D2DEFF;}
   background-color: rgba(26,127,232,1);
 }
 
-.main{
+.blog-index{
   width: 100%;
   height: 100%;
-  margin-bottom: 2.08333333%;
-  padding-left: 2.08333333%;
-  padding-right: 2.08333333%;
-  text-align: center;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  -o-column-count: 2;
-  column-count: 2;
+  padding-bottom: 3%;
   color: #1A2140;
 }
 
-.main .container{
+.blog-index .container{
+  text-align: center;
   width: 100%;
   height: 100%;
-  padding: 1.04166666% 1.04166666% 1.04166666% 1.04166666%;
 }
 
-.main .project{
-  width: 100%;
+.blog-index section{
   display: inline-block;
-  margin-top: 1.04166666%;
+  padding: 0.52083333% 0.52083333% 0.52083333% 0.52083333%;
+  font-size: 125%;
+  width: 45%;
+  height: 100%;
+  float: left;
+  margin-left: 3.64583333333%;
 }
 
-.project p{
-  white-space: pre-line;
+.blog-index a{
+  text-decoration: none;
+  font-size: 90%;
+}
+
+.blog-index a:hover{color: #006600;
+text-decoration: underline;}
+
+.blog-index a:visited{color: #7D2B00;}
+
+.blog-index li{
+  margin-top: 20px;
+  font-size: 20px;}
+
+.social-icon{
   text-align: center;
-  line-height: 110%;
+  margin-bottom: 5%;
+  margin-top: 2.08333333%;
+  width: 100%;
 }
 
 .social-icon{
