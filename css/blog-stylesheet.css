@@ -57,6 +57,10 @@ header p{
   padding-right: 1.04166666666%;
   padding-bottom: 1%;
 }
+#post td{
+  padding-right: 1%;
+  padding-left: 1%;
+  font-size: 80%;}
 
 #post b{font-size: 156.25%;}
 
@@ -70,15 +74,14 @@ header p{
   border-radius: 30%;}
 
 #post code{
-  padding-left: 10%;
-  display: block;
-  width: auto;
+  position: relative;
 }
 
 #post img{
-  /*display: inline-block;*/
+  display: inline-block;
+  position: relative;
   margin-left: 4.083333333%;
-  width: auto;
+  width: 55%;
   height: auto;
 }
 

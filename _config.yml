@@ -2,12 +2,12 @@
 title: \@riceynoodle
 name: Xiran Ou
 email: xiranou@gmail.com
-description: > # Xiran Ou's Bizarre Adventures
-baseurl: "/xiranou.github.io" # the subpath of your site, e.g. /blog/
-url: "http://xiranou.github.io" # the base hostname & protocol for your site
-highlighter: rouge
+description: Xiran Ou's Bizarre Adventures
+baseurl: "/xiranou.github.io"
+url: "http://xiranou.github.io"
 twitter_username: \@riceynoodle
 github_username:  xiranou
 
 # Build settings
-markdown: kramdown
+highlighter: rouge
+encoding: utf-8

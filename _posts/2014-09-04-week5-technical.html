@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>DBC Blog</title>
-  <meta charset="UTF-8">
-  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../stylesheets/reset.css">
-  <link rel="stylesheet" href="../stylesheets/prettify-tomorrow-night.css">
-  <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
-  <script type="text/javascript" src="../JavaScript/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-  <!-- header div -->
-  <header>
-    <h3><span>X</span>iran <span>O</span>u's Bizarre Adventures</h3>
-    <p>... my unexpected journey into a world of codes</p>
-  </header>
-
-  <!-- Main Body -->
-  <div class="blog">
-    <h4 class='title'>Ruby, Class</h4>
-    <p class='sub-title'>Week-4 Technical Blog</p>
-    <div id="post">
-      <p>
+---
+layout: post
+title: Ruby, Class
+week: 5
+categories: technical
+---
       In object oriented programming(OOP), codes are written to model objects in the real world. Such object will have its own attributes and behaviors. While the state(data) within the object will set its attributes, the methods(codes) set the behaviors.
 
       A class in OOP is simply the blueprint, a constructor for objects. While you create an object, it is an instance of its class. Say that you are creating a coin, an object that has attributes like shape, weight, height(maybe), the material it created from(colors, maybe), and the emblems on its head and tail. All these attribute can be grouped into a class, a blueprint for all coin creations, and each individual coin is an instance of this class. A coin has certain behaviors when it being carried in a pocket, spend in a transaction, or thrown high up in the air. All these actions will produce something according to the behaviors of the coin. How will a coin that has a weight of X behave while being toss? What can you exchange for with a dollar coin? These are essentially methods within the coin class that returns something when these actions are called for.
@@ -93,69 +75,3 @@
         ruler.measurement(rect_one) # =>  "This rectangle has length of 10 and width of 5."
       </code>
       The ruler can get the measurements from our rectangle only because we allowed those instance-variables to be accessible via values returned by getter methods. Similarity, we can have the measurements of the rectangle object to be changed from outside of its class using 'attr_writer' (or a setter method) and even do both at the same time with 'attr_accessor' (both getter and setter method). However, we need to be careful when granting access to instance-variables since not every attribute of an object are meant to be written (or even read, think of a credit-card object) by an outside class.
-      </p>
-    </div>
-  </div>
-
-  <!-- Navigation -->
-  <div class="side">
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <!-- <li><a href="../about-me.html">About Me</a></li> -->
-        <li><a href="../project-index.html">Projects</a></li>
-        <li><a href="mailto:xiranou@gmail.com">Contact Me</a></li>
-        <li>Recent Posts
-          <ul id='sub-menu'>
-            <li><a href="#sub-menu">Technical Blogs</a>
-              <ul>
-                <li><a href="t1-compare-websites.html">Compare Websites</a></li>
-                <li><a href="week2_technical.html">Inine vs Block vs Inline-Block</a></li>
-                <li><a href="week3_technical.html">JavaScript:Powers and Limitations</a></li>
-                <li><a href="week4_technical.html">Ruby Enumerable #map</a></li>
-                <li><a href="week5_technical.html">Ruby, Class</a></li>
-                <li><a href="week6_technical.html">Ruby Variable Scope</a></li>
-                <li><a href="week7_technical.html">SQL Injection</a></li>
-              </ul>
-            </li>
-            <li><a href="#sub-menu">Cultural BLogs</a>
-              <ul>
-                <li><a href="c1-chefs-kitchen.html">Fireside Chat</a></li>
-                <li><a href="week3_cultural.html">Thinking Style</a></li>
-                <li><a href="week4_cultural.html">Passwords,Passw0rds,P@assw0rds</a></li>
-                <li><a href="week5_cultural.html">Hello, anyone interested to pair?</a></li>
-                <li><a href="week6_cultural.html">Stereotype Threat</a></li>
-                <li><a href="week7_cultural.html">Free</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>Archives
-          <ul>
-            <li><a href="../blog-index.html">Index</a></li>
-            <!-- <li><a href="#">date</a></li> -->
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="social-icon">
-    <div class="container">
-      <a href="#"><img src="../imgs/Facebook-icon.png" alt="Facebook"></a>
-      <a href="https://github.com/xiranou/" target='_blank'><img src="../imgs/GitHub-icon.png" alt="GitHub"></a>
-      <a href="#"><img src="../imgs/LinkedIn-icon.png" alt="Linkedin"></a>
-      <!-- <a href="mailto:xiranou@gmail.com"><img src="imgs/mail-icon.png" alt="Email"></a> -->
-      <!-- <a href="#"><img src="imgs/Twitter-icon.png" alt="Twitter"></a> -->
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <section>
-      <p>&copy;Xiran Ou
-      09/04/14</p>
-    </section>
-  </footer>
-</body>
-</html>
