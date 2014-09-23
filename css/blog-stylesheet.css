@@ -10,6 +10,8 @@ header{
   margin-bottom: 1.208333333%;
   border-bottom: thick dotted black;
   text-align: center;
+  padding-top: 2.55%;
+  padding-bottom: 3%;
 }
 
 header h3{
@@ -34,28 +36,26 @@ header p{
   background-color: #068587;
   border-radius: 5%;
 }
-
-.title{
+.title{padding-top: 5%;}
+#post-title{
   font-size: 180%;
   font-weight: bold;
-  margin-top: 2.0833333333%;
-  margin-bottom: 1.0833333333%;
+  padding-bottom: 2%;
 }
 
-.sub-title{
+#sub-title{
   font-size: 110%;
   line-height: 100%;
-  margin-bottom: 3.0833333333%;
 }
-#post{padding-bottom: 1%;}
-#post p{
+
+#post{
   text-align: justify;
   white-space: pre-wrap;
-  text-indent: 2em;
   font-size: 120%;
   line-height: 160%;
   padding-left: 2.0833333333%;
   padding-right: 1.04166666666%;
+  padding-bottom: 1%;
 }
 
 #post b{font-size: 156.25%;}

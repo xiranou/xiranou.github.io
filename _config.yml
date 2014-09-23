@@ -5,6 +5,7 @@ email: xiranou@gmail.com
 description: > # Xiran Ou's Bizarre Adventures
 baseurl: "/xiranou.github.io" # the subpath of your site, e.g. /blog/
 url: "http://xiranou.github.io" # the base hostname & protocol for your site
+highlighter: rouge
 twitter_username: \@riceynoodle
 github_username:  xiranou
 

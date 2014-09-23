@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC Blog</title>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../stylesheets/reset.css">
+  <link rel="stylesheet" href="../stylesheets/prettify-desert-scheme.css">
+  <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+  <script src="../JavaScript/prettify.js"></script>
+</head>
+<body onload="prettyPrint()">
+  <!-- header div -->
+  <header>
+    <h3><span>X</span>iran <span>O</span>u's Bizarre Adventures</h3>
+    <p>... my unexpected journey into a world of codes</p>
+  </header>
+
+  <!-- Main Body -->
+  <div class="blog">
+    <h4 class='title'>SQL Injection</h4>
+    <p class='sub-title'>Week-7 Technical Blog</p>
+    <div id="post">
+      <p>SQL Injection is a technique use by malicious attackers to inject SQL commands via user inputs. A successful attack can read and modify sensitive data from database or even perform administrative operations such as shutting down the DBMS (Database management system).
+
+      SQL Injection attacks are very common. When a user input is not validated and is being use in a SQL statement, it becomes vulnerable to an SQL Injection attack. For example, if a SQL statement is written like this:
+      <code class="prettyprint">sql_statement = "SELECT * FROM table_1 WHERE user_id = #{input_id}"</code>
+      The 'input_id' is being added to the string of the SELECT statement. If, a malicious user were to input something like '101 OR 1=1', the SELECT statement will then becomes:
+      <code class="prettyprint">SELECT * FROM table_1 WHERE user_id = 101 OR 1 = 1</code>
+      Since '1 = 1' will always return 'true', the query will then returns everything from the 'table_1', including it's sensitive information.
+
+      There are also SQL Injection attacks based on batched SQL statements. What if the attacker enters something like '101 OR 1=1; DROP TABLE table_1'. The SQL statement then becomes:
+      <code class="prettyprint">SELECT * FROM table_1 WHERE user_id = 101 or 1=1; DROP TABLE table_1</code>
+      This will then returns everything from 'table_1' and then deletes it from the database!
+
+      SQL Injection is very dangerous indeed, but there are ways to combat this issue. One of them would be setting up a blacklist to search against SQL Injection attacks. However, this is not an efficient way to combat this issue. Words and characters like 'delete', 'drop', ';', and '=' are very commonly used. Also, it is perfectly legal for a database filed to contain SQL statements.
+
+      One proven way to protect your database from SQL Injections is to use SQL parameters. The parameters are marked with '@' in a SQL statement, while in Ruby, you can use '?' as a placeholder for the parameter. Using parameters will let the SQL engine to treat them literally instead of executing them as part of a statement. For example, if we change our previous statement string to:
+      <code class="prettyprint">sql_statement = "SELECT * FROM table_1 WHERE user_id = ?"
+        db.Execute(sql_statement, user_input)</code>
+      When the attacker enters '101 OR 1=1' as the input, SQL will treat it literally, looking for an user_id that is exactly '101 OR 1=1' and not treating and executing the 'OR 1=1' as a part of the statement.</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="side">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="../about-me.html">About Me</a></li> -->
+        <li><a href="../project-index.html">Projects</a></li>
+        <li><a href="mailto:xiranou@gmail.com">Contact Me</a></li>
+        <li>Recent Posts
+          <ul id='sub-menu'>
+            <li><a href="#sub-menu">Technical Blogs</a>
+              <ul>
+                <li><a href="t1-compare-websites.html">Compare Websites</a></li>
+                <li><a href="week2_technical.html">Inine vs Block vs Inline-Block</a></li>
+                <li><a href="week3_technical.html">JavaScript:Powers and Limitations</a></li>
+                <li><a href="week4_technical.html">Ruby Enumerable #map</a></li>
+                <li><a href="week5_technical.html">Ruby, Class</a></li>
+                <li><a href="week6_technical.html">Ruby Variable Scope</a></li>
+                <li><a href="week7_technical.html">SQL Injection</a></li>
+              </ul>
+            </li>
+            <li><a href="#sub-menu">Cultural BLogs</a>
+              <ul>
+                <li><a href="c1-chefs-kitchen.html">Fireside Chat</a></li>
+                <li><a href="week3_cultural.html">Thinking Style</a></li>
+                <li><a href="week4_cultural.html">Passwords,Passw0rds,P@assw0rds</a></li>
+                <li><a href="week5_cultural.html">Hello, anyone interested to pair?</a></li>
+                <li><a href="week6_cultural.html">Stereotype Threat</a></li>
+                <li><a href="week7_cultural.html">Free</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Archives
+          <ul>
+            <li><a href="../blog-index.html">Index</a></li>
+            <!-- <li><a href="#">date</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="social-icon">
+    <div class="container">
+      <a href="#"><img src="../imgs/Facebook-icon.png" alt="Facebook"></a>
+      <a href="https://github.com/xiranou/" target='_blank'><img src="../imgs/GitHub-icon.png" alt="GitHub"></a>
+      <a href="#"><img src="../imgs/LinkedIn-icon.png" alt="Linkedin"></a>
+      <!-- <a href="mailto:xiranou@gmail.com"><img src="imgs/mail-icon.png" alt="Email"></a> -->
+      <!-- <a href="#"><img src="imgs/Twitter-icon.png" alt="Twitter"></a> -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section>
+      <p>&copy;Xiran Ou
+      09/16/14 </p>
+    </section>
+  </footer>
+</body>
+</html>
