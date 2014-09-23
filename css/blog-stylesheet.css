@@ -57,7 +57,7 @@ header p{
   padding-right: 1.04166666666%;
   padding-bottom: 1%;
 }
-#post td{
+#post>td{
   padding-right: 1%;
   padding-left: 1%;
   font-size: 80%;}
@@ -181,4 +181,20 @@ footer section p{
   padding-bottom: 1.04166666666%;
   white-space: pre-line;
   line-height: 130%;
+}
+.code pre{
+  white-space: pre;
+  padding-top: 1%;
+  padding-left: 2%;
+  width: auto;
+  overflow-x: scroll;
+  font-family: "Consolas";
+}
+
+.gl{
+  color:red;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-collapse: collapse;
+  font-family: "Consolas";
 }
