@@ -1,13 +1,13 @@
 # Site settings
-title: \@riceynoodle
+title: Xiran Ou's Bizarre Adventures
 name: Xiran Ou
 email: xiranou@gmail.com
-description: Xiran Ou's Bizarre Adventures
+description: My unexpected journey into a world of codes
 baseurl: "/xiranou.github.io"
 url: "http://xiranou.github.io"
-twitter_username: \@riceynoodle
 github_username:  xiranou
 
 # Build settings
+markdown: kramdown
 highlighter: rouge
 encoding: utf-8
