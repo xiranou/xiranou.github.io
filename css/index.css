@@ -1,9 +1,13 @@
+html{background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
+
 body{
-  color: #0D0F0F;
-  /*background-color: #DFF0F3;*/
-  background: url(../imgs/background.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  /*color: #F11B03;*/
+  color: #FF2B00;
   font-family: 'Vollkorn', serif;
   font-size: 1em;
 }
@@ -16,6 +20,9 @@ body{
   margin-right: 1.2%;
   height: 100%;
   text-align: center;
+  /*background-color: rgba(19,127,232,0.35);*/
+  /*background-color: rgba(143,19,0,0.4);*/
+  background-color: rgba(31,6,2,0.4);
 }
 
 header{
@@ -39,23 +46,23 @@ nav{margin-top: 2.08333333%;
     margin-right: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: rgba(26,127,232,0.35);}
+  }
 
-nav a{text-decoration: none;
+a{text-decoration: none;
   display: inline-block;
   width: 100%;
-  color: #000099;
+  color: #40FF7F;
   font-size: 125%;
   border-radius: 10%;
   padding-left: 0.50283333%;
   padding-right: 0.50283333%;}
 
-nav a:hover{color: #006600;
-background-color: #6DFFFA;}
+a:hover{color: #006600;}
+nav a:hover{background-color: #6DFFFA;}
 
-nav a:visited{color: #7D2B00;}
+a:visited{color: #FCCB5F;}
 
-nav a:active{background-color: #D2DEFF;}
+a:active{background-color: #D2DEFF;}
 
 .main-menu>li{
   display: inline-block;
@@ -70,7 +77,7 @@ nav a:active{background-color: #D2DEFF;}
   display: block;
   line-height: 2em;
   padding:0.5em;
-  background-color: rgba(26,127,232,1);
+  background-color: rgb(31,6,2);
 }
 
 .main{
@@ -79,7 +86,7 @@ nav a:active{background-color: #D2DEFF;}
   margin-bottom: 2.08333333%;
   margin-left: auto;
   margin-right: auto;
-  color: #1A2140;
+  /*color: #7F0C1E;*/
 }
 
 .main .container{
@@ -92,7 +99,7 @@ nav a:active{background-color: #D2DEFF;}
 }
 
 .main span{
-  color: #6883FF;
+  color: #FF9E15;
   font-size: 2em;
   padding-left: 0.05em;
   padding-right: 0.05em;
@@ -126,7 +133,7 @@ nav a:active{background-color: #D2DEFF;}
   height: 80%;
   width: 80%;
 }
-
+.social-icon a{width: auto;}
 .social-icon img{
   margin-left: 3.125%;
   margin-right: 3.125%;
@@ -185,13 +192,11 @@ blog-index{
 .blog-main a{
   text-decoration: none;
   font-size: 90%;
+  width: auto;
+  padding-top: 0.22em;
+  padding-bottom: 0.22em;
 }
-
-.blog-main a:hover{color: #006600;
-text-decoration: underline;
-background-color: #6DFFFA;}
-
-.blog-main a:visited{color: #7D2B00;}
+.blog-main a:hover{background-color: #6DFFFA;}
 
 .blog-main li{
   margin-top: 20px;
@@ -208,9 +213,9 @@ background-color: #6DFFFA;}
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
-  color: #1A2140;
 }
-
+.project-main a{width: auto;}
+.project-main a:hover{background-color: #6DFFFA;}
 .project-main .container{
   width: 100%;
   height: 100%;
