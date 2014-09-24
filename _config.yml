@@ -3,11 +3,11 @@ title: Xiran Ou's Bizarre Adventures
 name: Xiran Ou
 email: xiranou@gmail.com
 description: My unexpected journey into a world of codes
-baseurl: "/xiranou.github.io"
+# baseurl: "/xiranou.github.io"
 url: "http://xiranou.github.io"
 github_username:  xiranou
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
-encoding: utf-8
+# kramdown:
+#   use_coderay: true
+# highlighter: rouge

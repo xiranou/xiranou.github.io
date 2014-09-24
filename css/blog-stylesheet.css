@@ -191,21 +191,22 @@ footer section p{
 .highlighttable{
   white-space: pre-line;
   width: 100%;
-  text-align: left;
 }
 
 .code pre{
-  padding-top: 1%;
-  padding-bottom: 3%;
+  text-align: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.25em;
   width: 100%;
   overflow-x: scroll;
   font-family: "Consolas";
 }
 
 .linenos{
-  color:red;
-  padding-left: 1%;
-  padding-right: 1%;
+  color: #0086f7;
+  padding-left: 0.5em;
+  padding-right: 0.25em;
   border-collapse: collapse;
   font-family: "Consolas";
 }
