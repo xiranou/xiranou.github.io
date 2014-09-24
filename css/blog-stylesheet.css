@@ -190,7 +190,8 @@ footer section p{
 
 .highlighttable{
   white-space: pre-line;
-  width: 90%;
+  width: 95%;
+  overflow-x: scroll;
 }
 
 .code pre{
@@ -199,7 +200,7 @@ footer section p{
   padding-bottom: 0.5em;
   padding-left: 0.25em;
   width: 100%;
-  overflow-x: scroll;
+  /*overflow-x: scroll;*/
   font-family: "Consolas";
 }
 
