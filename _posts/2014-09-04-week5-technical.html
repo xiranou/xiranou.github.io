@@ -13,65 +13,66 @@ categories: technical
       Now lets look at a simpler object, an rectangle. What does a rectangle have? 4 sides, 2 shorter ones we call the width and 2 longer ones we call length. How does it behave? Stuff can be put in it (determined by its area) and people can walk around it (determined by its perimeter).
 
       The blueprint, a Rectangle class, has an initialize method that set the object's attributes: length and width. A method to calculate the perimeter and another to calculate the area. Within the initialize method we can see two variables with '@' before it. These are called instance-variables. They belong to the object that is being created. Since different objects will have different values for their attributes (quarter vs penny), these variables only belong to one particular object, an instance its class. They stay inside the scope of the instance.
-      <code class="prettyprint">
-        class Rectangle
-            def initialize(length, width)
-              @length = length
-              @width = width
-            end
+{% highlight ruby linenos=table %}
+class Rectangle
+  def initialize(length, width)
+    @length = length
+    @width = width
+  end
 
-            def perimeter
-              (@length + @width) * 2
-            end
+  def perimeter
+    (@length + @width) * 2
+  end
 
-            def area
-              @length * @width
-            end
-        end
-      </code>
+  def area
+    @length * @width
+  end
+end
+{% endhighlight %}
       After a rectangle object is initialized. These instance-variables are ready to be used by methods within this class. Now you can call the methods that belongs to this class, in this case 'area' and 'perimeter', on the object. As you can see, both perimeter and area methods return outcomes that is determined by the value of the instance-variables.
-      <code class="prettyprint">
-        rect_one = Rectangle.new(10,5)
-        rect_one.perimeter #=> 30
-        rect_one.area      #=> 50
-      </code>
+{% highlight ruby linenos=table %}
+rect_one = Rectangle.new(10,5)
+rect_one.perimeter #=> 30
+rect_one.area      #=> 50
+{% endhighlight %}
       Just like real-life objects, this rectangle can interact with other objects too. Recalled that the instance-variables are living inside the scope of the object, only a method that belongs to its class can gain access to them. So what if some other objects want to take a look at these variables? We will need to give our class a getter method that returns the desired instance-variable. This can be done by using attr_reader or actually write out the method.
-      <code class="prettyprint">
-        class Rectangle
-            attr_reader :length, :width
-            ## is the same as
-            # def length
-            #   @length
-            # end
-            # def width
-            #   @width
-            # end
-            def initialize(length, width)
-              @length = length
-              @width = width
-            end
+{% highlight ruby linenos=table %}
+class Rectangle
+  attr_reader :length, :width
+## is the same as ##
+# def length
+#   @length
+# end
+# def width
+#   @width
+# end
 
-            def perimeter
-              (@length + @width) * 2
-            end
+  def initialize(length, width)
+    @length = length
+    @width = width
+  end
 
-            def area
-              @length * @width
-            end
-        end
+  def perimeter
+    (@length + @width) * 2
+  end
 
-        rect_one.length # =>  10
-        rect_one.width # =>  5
-      </code>
+  def area
+    @length * @width
+  end
+end
+
+rect_one.length # =>  10
+rect_one.width # =>  5
+{% endhighlight %}
       Now our rectangle object has methods that returns its instance-variables. Say we have a ruler object from a ruler class that has a method which will take a rectangle object as its argument, then call those two methods the rectangle and return the length and width values as a string.
-      <code class="prettyprint">
-        class Ruler
-            def measurement(rectangle)
-              "This rectangle has length of #{rectangle.length} and width of #{rectangle.width}."
-            end
-        end
+{% highlight ruby linenos=table %}
+class Ruler
+  def measurement(rectangle)
+    "This rectangle has length of #{rectangle.length} and width of #{rectangle.width}."
+  end
+end
 
-        ruler = Ruler.new
-        ruler.measurement(rect_one) # =>  "This rectangle has length of 10 and width of 5."
-      </code>
+ruler = Ruler.new
+ruler.measurement(rect_one) # =>  "This rectangle has length of 10 and width of 5."
+{% endhighlight %}
       The ruler can get the measurements from our rectangle only because we allowed those instance-variables to be accessible via values returned by getter methods. Similarity, we can have the measurements of the rectangle object to be changed from outside of its class using 'attr_writer' (or a setter method) and even do both at the same time with 'attr_accessor' (both getter and setter method). However, we need to be careful when granting access to instance-variables since not every attribute of an object are meant to be written (or even read, think of a credit-card object) by an outside class.
