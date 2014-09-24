@@ -49,18 +49,23 @@ header p{
 }
 
 #post{
-  text-align: justify;
-  white-space: pre-wrap;
   font-size: 120%;
   line-height: 160%;
+  white-space: pre-wrap;
   padding-left: 2.0833333333%;
-  padding-right: 1.04166666666%;
+  padding-right: 2.0833333333%;
   padding-bottom: 1%;
 }
-#post>td{
-  padding-right: 1%;
+#post p{
+  text-align: justify;
+  text-indent: 1.12em;
+}
+.post-table{width: 100%;}
+.post-table td{
+  padding-right: 2%;
   padding-left: 1%;
-  font-size: 80%;}
+  font-size: 80%;
+}
 
 #post b{font-size: 156.25%;}
 
@@ -183,19 +188,21 @@ footer section p{
   line-height: 130%;
 }
 
-.highlight{
+.highlighttable{
   white-space: pre-line;
+  width: 100%;
+  text-align: left;
 }
 
 .code pre{
   padding-top: 1%;
-  padding-left: 3.55555%;
-  width: auto;
+  padding-bottom: 3%;
+  width: 100%;
   overflow-x: scroll;
   font-family: "Consolas";
 }
 
-.gl{
+.linenos{
   color:red;
   padding-left: 1%;
   padding-right: 1%;
