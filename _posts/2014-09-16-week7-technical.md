@@ -9,7 +9,7 @@ SQL Injection is a technique use by malicious attackers to inject SQL commands v
 SQL Injection attacks are very common. When a user input is not validated and is being use in a SQL statement, it becomes vulnerable to an SQL Injection attack. For example, if a SQL statement is written like this:
 
 {% highlight ruby linenos=table %}
-sql_statement = "SELECT * FROM table_1 WHERE user_id = #{input_id}"
+  sql_statement = "SELECT * FROM table_1 WHERE user_id = #{input_id}"
 {% endhighlight %}
 
 The 'input_id' is being added to the string of the SELECT statement. If, a malicious user were to input something like '101 OR 1=1', the SELECT statement will then becomes:
