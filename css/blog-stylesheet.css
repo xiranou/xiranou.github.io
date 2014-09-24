@@ -182,10 +182,14 @@ footer section p{
   white-space: pre-line;
   line-height: 130%;
 }
+
+.highlight{
+  white-space: pre-line;
+}
+
 .code pre{
-  white-space: pre;
   padding-top: 1%;
-  padding-left: 2%;
+  padding-left: 3.55555%;
   width: auto;
   overflow-x: scroll;
   font-family: "Consolas";
