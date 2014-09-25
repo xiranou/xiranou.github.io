@@ -8,7 +8,7 @@ So I've finally able to set up [Jekyll](http://jekyllrb.com/) and converted ever
 
 First of all, you need to install Jekyll. Assuming you already have Ruby 1.9.3 or up and Bundler installed, getting Jekyll will be as easy as getting any other Ruby gem, in your terminal:
 
-{$ highlight bash linenos=table %}
+{% highlight bash linenos=table %}
 gem install jekyll
 {% endhighlight %}
 
@@ -49,11 +49,12 @@ This is just a basic HTML head that includes links to your CSS files, but notice
 After all that, lets go into `_layouts` folder and look inside `default.html`. This is where you tell Jekyll how you want the page to be layout. Let's delete everything in it and type the following:
 
 {% highlight html linenos=table %}
+{% raw %}
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
+    `{% include header.html %}`
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
@@ -62,6 +63,7 @@ After all that, lets go into `_layouts` folder and look inside `default.html`. T
     {% include footer.html %}
   </body>
 </html>
+{% endraw %}
 {% endhighlight %}
 
 As you could've guessed, we used the Liquid Tag markup to `include` the HTML files we made for the head, header, and footer. Then we make the layout for the body and use the Liquid Output markup for the `content` (this is a Jekyll Variable that renders the contents inside a page or post, it is NOT DEFINED outside of the layout files.) we going to put for the index page.
