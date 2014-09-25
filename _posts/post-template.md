@@ -1,7 +1,7 @@
 ---
 layout: post
-title: #title
-week: ##
+title: title
+week: #
 categories: technical cultural
 ---
-  <!-- write here -->
+<!-- write here -->

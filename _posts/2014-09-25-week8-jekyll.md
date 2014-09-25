@@ -3,6 +3,7 @@ layout: post
 title: Jekyll! A simple guide.
 week: 8
 categories: technical
+tag: jekyll
 ---
 So I've finally able to set up [Jekyll](http://jekyllrb.com/) and converted everything of my website to it. It took me a long while, but its worth it. Now my codes are a lot more organized. Things like making templates, layouts, syntax highlighting, and updating links had become much much easier for future posts and pages. As of right now, I'm writing this post in MarkDown! Pretty cool, huh? I've only scratched the bare surface of Jekyll, but do allow me give you a brief example on how to get Jekyll set up for your blog.
 
