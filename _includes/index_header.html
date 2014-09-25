@@ -14,11 +14,20 @@
         </li>
         <li><a href="{{site.baseurl}}/blog-index.html">Blog</a>
           <ul class="sub-menu">
-            {% for post in site.posts %}
             <li>
-              <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+              <ul>Technical Posts
+                {% for category in site.categories.technical %}
+                <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+                {% endfor %}
+              </ul>
             </li>
-            {% endfor %}
+            <li>
+              <ul>Cultural Posts
+                {% for category in site.categories.cultural %}
+                <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="mailto:xiranou@gmail.com">Contact Me</a></li>

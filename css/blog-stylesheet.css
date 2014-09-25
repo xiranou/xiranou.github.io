@@ -116,7 +116,7 @@ nav>ul{
   padding: 0;
   width: 100%;
 }
-#sub-menu li{ position: relative;}
+#sub-menu li{position: relative;}
 #sub-menu li ul{
   position: absolute;
   right: 85%;
