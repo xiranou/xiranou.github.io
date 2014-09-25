@@ -204,6 +204,7 @@ footer section p{
   overflow-x: scroll;
   font-family: "Consolas";
   font-size: 80%;
+  word-spacing: 0.3em;
 }
 
 .linenos{
