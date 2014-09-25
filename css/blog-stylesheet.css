@@ -198,12 +198,12 @@ footer section p{
 
 .code pre{
   text-align: left;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.3em;
+  padding-top: 1em;
+  padding-left: 1em;
   width: 100%;
   overflow-x: scroll;
   font-family: "Consolas";
+  font-size: 80%;
 }
 
 .linenos{
