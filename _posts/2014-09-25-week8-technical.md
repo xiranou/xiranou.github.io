@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's sort stuff out!
+title: Let's SORT stuff out!
 week: 8
 categories: technical
 ---
@@ -53,7 +53,7 @@ Notice the similarity between selection and interstion sort?
 ---
 Pretty animation:
 
-![Bubble Sort](http://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+![Bubble Animation](http://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 {% highlight ruby linenos=table %}
 def bubble_sort(arry)
@@ -75,7 +75,7 @@ end
 ---
 Pretty animation:
 
-![Quick Sort](http://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
+![Quick Animation](http://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
 
 {% highlight ruby linenos=table %}
 def quick_sort arr
@@ -91,7 +91,7 @@ end
 ---
 Pretty animation:
 
-![Merge Sort](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+![Merge Animation](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 {% highlight ruby linenos=table %}
 def merge_sort(array)
