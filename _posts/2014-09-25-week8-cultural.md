@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title
+title: Angry lil' me
 week: 8
 categories: cultural
 ---
