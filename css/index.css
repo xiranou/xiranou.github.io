@@ -84,6 +84,7 @@ nav a:hover{background-color: #6DFFFA;}
   position:absolute;
   visibility:hidden;
   display: block;
+  font-size: 78%;
   line-height: 2em;
   padding:0.5em;
   background-color: rgb(31,6,2);
@@ -157,8 +158,8 @@ nav a:hover{background-color: #6DFFFA;}
 .blog-main a:hover{background-color: #6DFFFA;}
 
 .blog-main li{
-  margin-top: 20px;
-  font-size: 20px;}
+  margin-top: 2%;
+  font-size: 0.8em;}
 
 /* project index main section */
 .project-main{

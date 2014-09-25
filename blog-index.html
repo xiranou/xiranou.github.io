@@ -8,24 +8,17 @@ title: My Blog
       <section class="technical-blog">
         <ul>
           <h3>Technical Blogs</h3>
-          <li><a href="blog-posts/t1-compare-websites.html">Compare Websites</a></li>
-          <li><a href="blog-posts/week2_technical.html">Inine vs Block vs Inline-Block</a></li>
-          <li><a href="blog-posts/week3_technical.html">JavaScript:Powers and Limitations</a></li>
-          <li><a href="blog-posts/week4_technical.html">Ruby Enumerable: map</a></li>
-          <li><a href="blog-posts/week5_technical.html">Ruby, Class</a></li>
-          <li><a href="blog-posts/week6_technical.html">Ruby Variable Scope</a></li>
-          <li><a href="blog-posts/week7_technical.html">SQL Injection</a></li>
+          {% for category in site.categories.technical %}
+            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+          {% endfor %}
         </ul>
       </section>
       <section class="cultural-blog">
         <ul>
           <h3>Cultural Blogs</h3>
-          <li><a href="blog-posts/c1-chefs-kitchen.html">Fireside Chat</a></li>
-          <li><a href="blog-posts/week3_cultural.html">Thinking Style</a></li>
-          <li><a href="blog-posts/week4_cultural.html">Passwords,Passw0rds,P@assw0rds</a></li>
-          <li><a href="blog-posts/week5_cultural.html">Hello, anyone interested to pair?</a></li>
-          <li><a href="blog-posts/week6_cultural.html">Stereotype Threat</a></li>
-          <li><a href="blog-posts/week7_cultural.html">Free</a></li>
+          {% for category in site.categories.cultural %}
+            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+          {% endfor %}
         </ul>
       </section>
     </div>
