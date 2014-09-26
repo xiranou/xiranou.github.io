@@ -10,20 +10,20 @@ So I've finally able to set up [Jekyll](http://jekyllrb.com/) and converted ever
 First of all, you need to install Jekyll. Assuming you already have Ruby 1.9.3 or up and Bundler installed, getting Jekyll will be as easy as getting any other Ruby gem, in your terminal:
 
 {% highlight bash linenos=table %}
-gem install jekyll
+$ gem install jekyll
 {% endhighlight %}
 
 Now that Jekyll is installed (don't forget to `rbenv rehash` if you are using rbenv, since Jekyll is a gem that comes with its own commands), lets set up a boilerplate. `cd` to a directory of your desire and run the following in your terminal:
 
 {% highlight bash linenos=table %}
-jekyll new awesome_blog
+$ jekyll new awesome_blog
 {% endhighlight %}
 
 Jekyll had created a boilerplate for you inside `awesome_blog`, lets go see what is in there. `cd awesome_blog` and you should see a list of folders and files. You can start building your site now.
 
 First, lets look at `_config.yml`. This is where you set your [Jekyll Configurations](http://jekyllrb.com/docs/configuration/). The boilerplate already had some settings for you, all you need to do is to fill them up. Remember to leave `baseurl` alone if you don't have a host name. These will be store as data inside [Jekyll Variables](http://jekyllrb.com/docs/variables/) which we can use later.
 
-Lets start creating an index page. Inside the `_includes' folder is where you would write your HTML layout for pages and posts. Inside the `head.html` (you can rename it to anything to like, but be clear on what it is, we will just assume you will use the same template layout for all your pages and posts), you can write down the HTML tags for the head in here:
+Lets start creating an index page. Inside the `_includes` folder is where you would write your HTML layout for pages and posts. Inside the `head.html` (you can rename it to anything to like, but be clear on what it is, we will just assume you will use the same template layout for all your pages and posts), you can write down the HTML tags for the head in here:
 
 {% highlight html linenos=table %}
 <head>

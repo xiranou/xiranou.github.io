@@ -80,6 +80,10 @@ header p{
 
 #post code{
   position: relative;
+  color: #FF886B;
+  font-style: italic;
+  font-size: 90%;
+  word-spacing: 0.35em
 }
 
 #post img{
