@@ -1,8 +1,9 @@
 body{
-  color: #0D0F0F;
+  color: #000000;
   background-color: #6f0909;
   font-family: 'Vollkorn', serif;
   font-size: 1em;
+  font-weight: 500;
 }
 
 header{
@@ -12,6 +13,7 @@ header{
   text-align: center;
   padding-top: 2.55%;
   padding-bottom: 3%;
+  color: rgb(255, 152, 0);
 }
 
 header h3{
@@ -80,7 +82,7 @@ header p{
 
 #post code{
   position: relative;
-  color: #FF886B;
+  color: #0030F0;
   font-style: italic;
   font-size: 90%;
   word-spacing: 0.35em
@@ -136,19 +138,23 @@ nav a{
   text-decoration: none;
   white-space: pre;
   display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 a{
-  color: #8DBF67;
+  color: #6DF00A;
 }
 
 a:visited{
-  color: #FCCB5F;
+  color: #F6ECB6;
 }
 
 nav a:hover{
-  color:#006600;
-  background-color: #6DFFFA;}
+  /*color:#006600;*/
+  background-color: #DA3906;
+  border-radius: 10%;
+}
 
 .social-icon{
   clear: both;
