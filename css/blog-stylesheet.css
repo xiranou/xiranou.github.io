@@ -13,6 +13,7 @@ header{
   text-align: center;
   padding-top: 2.55%;
   padding-bottom: 3%;
+  color: rgb(255, 152, 0);
 }
 
 header h3{
@@ -137,6 +138,8 @@ nav a{
   text-decoration: none;
   white-space: pre;
   display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 a{
@@ -149,7 +152,9 @@ a:visited{
 
 nav a:hover{
   /*color:#006600;*/
-  background-color: #DA3906;}
+  background-color: #DA3906;
+  border-radius: 10%;
+}
 
 .social-icon{
   clear: both;
