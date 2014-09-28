@@ -28,17 +28,33 @@ header p{
   margin-bottom: 2.208333333%;
 }
 
+/* blog div */
 .blog{
   padding: 1.04166666666% 1.04166666666% 1.04166666666% 1.04166666666%;
   float: left;
   margin-left: 2.08%;
+  margin-top: 2.08%;
   width: 70%;
   height: 100%;
   text-align: center;
   background-color: #C94726;
   border-radius: 5%;
 }
+
+/* title div */
 .title{padding-top: 5%;}
+
+/* post div */
+.post{
+  font-size: 120%;
+  line-height: 160%;
+  white-space: pre-wrap;
+  padding-left: 2.0833333333%;
+  padding-right: 2.0833333333%;
+  padding-bottom: 1%;
+}
+
+/* post */
 #post-title{
   font-size: 180%;
   font-weight: bold;
@@ -50,28 +66,14 @@ header p{
   line-height: 100%;
 }
 
-#post{
-  font-size: 120%;
-  line-height: 160%;
-  white-space: pre-wrap;
-  padding-left: 2.0833333333%;
-  padding-right: 2.0833333333%;
-  padding-bottom: 1%;
-}
-#post p{
+.post p{
   text-align: justify;
   text-indent: 1.12em;
 }
-.post-table{width: 100%;}
-.post-table td{
-  padding-right: 2%;
-  padding-left: 1%;
-  font-size: 80%;
-}
 
-#post b{font-size: 156.25%;}
+.post b{font-size: 156.25%;}
 
-#post em{
+.post em{
   font-style: italic;
   font-size: 80%;
   color: #261C1B;
@@ -80,7 +82,7 @@ header p{
   padding-right: 0.7%;
   border-radius: 30%;}
 
-#post code{
+.post code{
   position: relative;
   color: #0030F0;
   font-style: italic;
@@ -88,12 +90,21 @@ header p{
   word-spacing: 0.35em
 }
 
-#post img{
+.post img{
   display: inline-block;
   position: relative;
   margin-left: 4.083333333%;
 }
 
+.post-table{width: 100%;}
+
+.post-table td{
+  padding-right: 2%;
+  padding-left: 1%;
+  font-size: 80%;
+}
+
+/* side div */
 .side {
   padding-top: 3%;
   float: right;
@@ -104,6 +115,12 @@ header p{
 
 .side li{color:rgb(9, 176, 199);}
 
+/* general a tag */
+a{color: #6DF00A;}
+
+a:visited{color: #F6ECB6;}
+
+/* navigation */
 nav{
   margin-right: 2.08%;
   position: relative;
@@ -111,6 +128,21 @@ nav{
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 30%;
 }
+
+nav a{
+  text-decoration: none;
+  white-space: pre;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+nav a:hover{
+  /*color:#006600;*/
+  background-color: #DA3906;
+  border-radius: 10%;
+}
+
 nav>ul{
   width: 90%;
   height: 95%;
@@ -123,51 +155,44 @@ nav>ul{
   padding: 0;
   width: 100%;
 }
+
 #sub-menu li{position: relative;}
+
 #sub-menu li ul{
   position: absolute;
   right: 85%;
   top: -90%;
   display: none;
 }
+
 #sub-menu li:hover ul{display: block;}
+
 #sub-menu li ul{
   border: 0.1em solid black;
   padding-left: 0.5em;
   padding-right: 0.5em;
   background-color: #850B0B;
   }
-nav a{
-  text-decoration: none;
-  white-space: pre;
-  display: inline-block;
-  padding-left: 2%;
-  padding-right: 2%;
-}
 
-a{
-  color: #6DF00A;
-}
-
-a:visited{
-  color: #F6ECB6;
-}
-
-nav a:hover{
-  /*color:#006600;*/
-  background-color: #DA3906;
-  border-radius: 10%;
-}
-
-.social-icon{
+/* footer */
+footer{
   clear: both;
   text-align: center;
-  margin: 2.083333333%;
-  /*border-top:thin dotted black;*/
+}
+footer section{
+  width: 100%;
+  height: 100%;
+}
+footer section p{
+  font-size: 90%;
+  padding-bottom: 3%;
+  white-space: pre-line;
+  line-height: 130%;
 }
 
 .social-icon .container{
-  padding-top: 1.04166666666%;
+  padding-top: 2.05%;
+  padding-bottom: 2.05%;
   display: inline-block;
   height: 80%;
   width: 80%;
@@ -185,23 +210,7 @@ nav a:hover{
   transform: scale(0.7,0.7);
 }
 
-footer{
-  clear: both;
-  padding-bottom: 1.04166666666%;
-  text-align: center;
-}
-footer section{
-  width: 100%;
-  height: 100%;
-}
-footer a{display: inline-block;}
-footer section p{
-  font-size: 90%;
-  padding-bottom: 1.04166666666%;
-  white-space: pre-line;
-  line-height: 130%;
-}
-
+/*code hightlight*/
 .highlighttable{
   white-space: pre-line;
   width: 95%;
