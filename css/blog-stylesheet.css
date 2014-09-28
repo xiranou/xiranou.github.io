@@ -101,6 +101,9 @@ header p{
   height: 100%;
   text-align: center;
 }
+
+.side li{color:rgb(9, 176, 199);}
+
 nav{
   margin-right: 2.08%;
   position: relative;
