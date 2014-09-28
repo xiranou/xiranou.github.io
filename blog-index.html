@@ -2,24 +2,23 @@
 layout: index_default
 title: My Blog
 ---
-
-  <div class="blog-main">
-    <div class="container">
-      <section class="technical-blog">
-        <ul>
-          <h3>Technical Blogs</h3>
-          {% for category in site.categories.technical %}
-            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
-          {% endfor %}
-        </ul>
-      </section>
-      <section class="cultural-blog">
-        <ul>
-          <h3>Cultural Blogs</h3>
-          {% for category in site.categories.cultural %}
-            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
+<div class="blog-main">
+  <div class="container">
+    <section class="technical-blog">
+      <ul>
+        <h3>Technical Blogs</h3>
+        {% for category in site.categories.technical %}
+          <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="cultural-blog">
+      <ul>
+        <h3>Cultural Blogs</h3>
+        {% for category in site.categories.cultural %}
+          <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
   </div>
+</div>
