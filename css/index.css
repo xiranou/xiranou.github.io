@@ -76,14 +76,14 @@ nav a:hover{background-color: #6DFFFA;}
 .main-menu>li{
   display: inline-block;
   width: auto;
-  height: auto;
   margin-right: 2%;
 }
 
 .sub-menu{
   position:absolute;
   visibility:hidden;
-  display: block;
+  display: inline-block;
+  width: auto;
   font-size: 78%;
   line-height: 2em;
   padding:0.5em;

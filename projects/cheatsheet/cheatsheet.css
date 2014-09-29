@@ -1,11 +1,13 @@
 html{
   background-color: #FFBE74;
+  width: auto;
 }
 
 body{
   font-size: 1em;
   color: #42311E;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 header{
@@ -19,32 +21,49 @@ header{
   border-bottom: thick solid red;
 }
 
-header h3{width: 100%;}
+header h3{
+  width: 100%;
+  font-size: 1.5em;
+}
 
-body section{
+.container{
+  width: auto;
+  height: 100%;
+}
+
+.container section{
   float: left;
   width: 40%;
   height: 100%;
   padding-left: 4.5em;
+  padding-right: 1.5em;
 }
 
-body section ul{
+.container section p{
+  font-size: 120%;
+  text-decoration: underline;
+}
+
+.container section ul{
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-body section ul li{
+.container section ul li{
   display: inline-block;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-body section ul li code{
+.container section ul li code{
   display: inline-block;
-  white-space: pre;
+  white-space: pre-line;
   padding-top: 0.5em;
   padding-bottom: 1em;
+  padding-right: 1.5em;
   line-height: 2.5em;
+  word-spacing: 0.15em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer{

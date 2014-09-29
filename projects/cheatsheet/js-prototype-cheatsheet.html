@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="cheatsheet.css">
+    <title>JavaScript prototypes Cheat Sheet</title>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h3>JavaScript prototypes</h3>
+    </header>
+    <div class="container">
+      <section id="left">
+        <ul>
+          <li>
+            <p>Object Constructor</p>
+            <code class="prettyprint lang-js">
+              var person = function(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+              }
+            </code>
+          </li>
+          <li>
+            <p>Using <em>new</em> keyword to create new objects</p>
+            <code class="prettyprint lang-js">
+              var me = new person('Xiran', 'Ou', 25);
+
+              var joe = new person('Joseph', 'Ou', 28);
+            </code>
+          </li>
+          <li>
+            <p>Add property to objects</p>
+            <code class="prettyprint lang-js">
+              me.favFood = 'Rice Noodles';
+
+              joe.favFood = 'Cake';
+            </code>
+          </li>
+          <li>
+            <p>Add method to objects</p>
+            <code class="prettyprint lang-js">
+              me.sayHello = function(){
+                return "Hello, my name is " + this.firstName + " " + this.lastName;
+              }
+
+              joe.sayHello = function(){
+                return "Wassup!"
+              }
+            </code>
+          </li>
+        </ul>
+      </section>
+      <!-- <section id="middle">
+        <ul>
+        </ul>
+      </section> -->
+      <section id="right">
+        <ul>
+          <li>
+            <p>Add property to prototypes</p>
+            <code class="prettyprint lang-js">
+              var person = function(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.fullName = firstName + " " + lastName;
+              }
+            </code>
+          </li>
+          <li>
+            <p>Add method to prototypes</p>
+            <code class="prettyprint lang-js">
+              var person = function(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.fullName = firstName + " " + lastName;
+                this.sayHello = function(){
+                  return "Hello, my name is " + this.fullName;
+                }
+              }
+            </code>
+          </li>
+          <li>
+            <p>Using <em>prototype</em> Property</p>
+            <code class="prettyprint lang-js">
+              person.prototype.fullName = this.firstName + " " + this.lastName;
+
+              person.prototype.sayHello = function(){
+                return "Hello, my name is " + this.fullName;
+              }
+            </code>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+
+  <footer>
+    <section><p>&copy;Xiran Ou 2014</p></section>
+  </footer>
+</html>
