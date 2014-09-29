@@ -1,36 +1,36 @@
 <header>
-    <h1>{{page.title}}</h1>
-    <nav>
-      <ul class='main-menu'>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/projects/index.html">Projects</a>
-          <ul class="sub-menu">
-            <li><a href="{{site.baseurl}}/projects/GPS/gps1.1.html">GPS1.1</a></li>
-            <li><a href="{{site.baseurl}}/projects/responsive-design/starting-point.html">Responsive-design</a></li>
-            <li><a href="{{site.baseurl}}/projects/javascript/knight.html">'work in progress(knight.html)'</a></li>
-            <li><a href="{{site.baseurl}}/projects/ruby-class/pizza_car.rb">'work in progress(pizza_car.rb)'</a></li>
-            <!-- <li><a href="{{site.baseurl}}/projects/cheatsheet/js-prototype-cheatsheet.html">Review: JavaScript Prototype Cheatsheet</li> -->
-          </ul>
-        </li>
-        <li><a href="{{site.baseurl}}/blog-index.html">Blog</a>
-          <ul class="sub-menu">
-            <li>
-              <ul>Technical Posts
-                {% for category in site.categories.technical %}
-                <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
-            <li>
-              <ul>Cultural Posts
-                {% for category in site.categories.cultural %}
-                <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="mailto:xiranou@gmail.com">Contact Me</a></li>
-      </ul>
-    </nav>
+  <h1>{{page.title}}</h1>
 </header>
+<nav>
+  <ul class='main-menu'>
+    <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+    <li><a href="{{site.baseurl}}/projects/index.html">Projects</a>
+      <!-- <ul class="sub-menu">
+        <li><a href="{{site.baseurl}}/projects/GPS/gps1.1.html">GPS1.1</a></li>
+        <li><a href="{{site.baseurl}}/projects/responsive-design/starting-point.html">Responsive-design</a></li>
+        <li><a href="{{site.baseurl}}/projects/javascript/knight.html">'work in progress(knight.html)'</a></li>
+        <li><a href="{{site.baseurl}}/projects/ruby-class/pizza_car.rb">'work in progress(pizza_car.rb)'</a></li>
+        <li><a href="{{site.baseurl}}/projects/cheatsheet/js-prototype-cheatsheet.html">Review: JavaScript Prototype Cheatsheet</li>
+      </ul> -->
+    </li>
+    <li><a href="{{site.baseurl}}/blog-index.html">Blog</a>
+      <ul class="sub-menu">
+        <li>
+          <ul>Technical Posts
+            {% for category in site.categories.technical %}
+            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li>
+          <ul>Cultural Posts
+            {% for category in site.categories.cultural %}
+            <li><a href="{{site.baseurl}}{{ category.url }}">{{category.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="mailto:xiranou@gmail.com">Contact Me</a></li>
+  </ul>
+</nav>
