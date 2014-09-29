@@ -1,0 +1,61 @@
+html{
+  background-color: #FFBE74;
+}
+
+body{
+  font-size: 1em;
+  color: #42311E;
+  width: 100%;
+}
+
+header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 3%;
+  width: 100%;
+  border-bottom: thick solid red;
+}
+
+header h3{width: 100%;}
+
+body section{
+  float: left;
+  width: 40%;
+  height: 100%;
+  padding-left: 4.5em;
+}
+
+body section ul{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+body section ul li{
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+body section ul li code{
+  display: inline-block;
+  white-space: pre;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  line-height: 2.5em;
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+footer section{
+  border-top: thick solid red;
+  margin-bottom: 2%;
+  padding-top: 2em;
+  width: 100%
+}

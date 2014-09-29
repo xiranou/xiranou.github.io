@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset='UTF-8'>
-    <link rel="stylesheet" href="{{site.baseurl}}/projects/cheatsheet/cheatsheet.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cheatsheet.css">
     <title>JavaScript prototypes Cheat Sheet</title>
   </head>
 
@@ -29,10 +30,6 @@
             var joe = new person('Joseph', 'Ou', 28);
           </code>
         </li>
-      </ul>
-    </section>
-    <section id="middle">
-      <ul>
         <li>
           <p>Add property to objects</p>
           <code>
@@ -46,6 +43,7 @@
             me.sayHello = function(){
               return "Hello, my name is " + this.firstName + " " + this.lastName;
             }
+
             joe.sayHello = function(){
               return "Wassup!"
             }
@@ -53,6 +51,10 @@
         </li>
       </ul>
     </section>
+    <!-- <section id="middle">
+      <ul>
+      </ul>
+    </section> -->
     <section id="right">
       <ul>
         <li>
@@ -83,9 +85,8 @@
         <li>
           <p>Using <em>prototype</em> Property</p>
           <code>
-            person.prototype.fullName = this.firstName + " " + this.lastName
-          </code>
-          <code>
+            person.prototype.fullName = this.firstName + " " + this.lastName;
+
             person.prototype.sayHello = function(){
               return "Hello, my name is " + this.fullName;
             }
