@@ -40,8 +40,17 @@ header h3{
 }
 
 .container section p{
-  font-size: 120%;
-  text-decoration: underline;
+  font-size: 150%;
+  font-weight: bold;
+  padding-bottom: 1em;
+  border-bottom: thin dotted #000000;
+
+}
+
+.container section p em{
+  color: rgb(50, 0, 252);
+  font-style: oblique;
+  font-weight: 100;
 }
 
 .container section ul{
@@ -64,6 +73,11 @@ header h3{
   line-height: 2.5em;
   word-spacing: 0.15em;
   font-family: 'Montserrat', sans-serif;
+}
+
+.container code .pln{
+  color: #380404;
+  letter-spacing: 0.05em;
 }
 
 footer{
