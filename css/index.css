@@ -259,11 +259,11 @@ blog-index{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   html{
     background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
-    width: 30%;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    width: 320px;
+    -webkit-background-size: 320px 600px;
+    -moz-background-size: 320px 600px;
+    -o-background-size: 320px 600px;
+    background-size: 320px 600px;
     font-size: 0.9em;
   }
 
