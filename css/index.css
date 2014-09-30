@@ -90,7 +90,7 @@ nav a:hover{background-color: #6DFFFA;}
   background-color: rgb(31,6,2);
 }
 
-/* home page main secion */
+/* home page main section */
 }
 .main{
   width: 100%;
@@ -130,7 +130,7 @@ nav a:hover{background-color: #6DFFFA;}
   font-style: italic;
 }
 
-/* blog index main secion */
+/* blog index main section */
 .blog-main .container{
   text-align: center;
   width: 100%;
@@ -230,7 +230,7 @@ nav a:hover{background-color: #6DFFFA;}
   transform: scale(0.7,0.7);
 }
 
-/* footer secion */
+/* footer section */
 footer{
   text-align: center;
   width: 100%;
@@ -249,9 +249,27 @@ blog-index{
 
 /* Media Queries */
 
-@media screen (min-device-width: 768px) and (max-device-width : 1024px) and (orientation : landscape){
+@media screen (min-device-width: 768px;) and (max-device-width: 1024px;) and (orientation: landscape;){
   body{
     font-size: 1em;
     width: 100%;
   }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  html{
+    background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
+    width: 30%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    font-size: 0.9em;
+  }
+
+  body{width: 100%;}
+
+  a{font-size: 95%;}
+
+  .blog-main a{word-break: break-all;}
 }
