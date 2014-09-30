@@ -260,10 +260,11 @@ blog-index{
   html{
     background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
     width: 320px;
-    -webkit-background-size: 320px 600px;
-    -moz-background-size: 320px 600px;
-    -o-background-size: 320px 600px;
-    background-size: 320px 600px;
+    height: 600px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     font-size: 0.9em;
   }
 
