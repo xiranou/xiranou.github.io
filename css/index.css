@@ -1,23 +1,22 @@
-html{
+html {
   background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   height: 100%;
-   width: 100%;
- }
-
-body{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+body {
   /*color: #F11B03;*/
+
   color: #FF2B00;
   font-family: 'Vollkorn', serif;
   font-size: 1em;
   width: auto;
   height: auto;
 }
-
-.wrapper{
+.wrapper {
   min-height: 100%;
   padding: 1em 1em 1em 1em;
   margin-top: 5%;
@@ -27,72 +26,76 @@ body{
   text-align: center;
   /*background-color: rgba(19,127,232,0.35);*/
   /*background-color: rgba(143,19,0,0.4);*/
-  background-color: rgba(31,6,2,0.4);
+
+  background-color: rgba(31, 6, 2, 0.4);
   height: 100%;
 }
-
 /* page header/title */
-header{
+
+header {
   width: 100%;
   margin-bottom: 2.0833333%;
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
 }
-
-header h1{
+header h1 {
   font-size: 200%;
   margin-top: 2.08333333%;
   margin-bottom: 1.04%;
 }
-
 /* general links */
-a{text-decoration: none;
+
+a {
+  text-decoration: none;
   display: inline-block;
   width: 100%;
   color: #40FF7F;
   font-size: 125%;
   border-radius: 10%;
   padding-left: 0.50283333%;
-  padding-right: 0.50283333%;}
-
-a:hover{color: #006600;}
-
-a:visited{color: #FCCB5F;}
-
-a:active{background-color: #D2DEFF;}
-
+  padding-right: 0.50283333%;
+}
+a:hover {
+  color: #006600;
+}
+a:visited {
+  color: #FCCB5F;
+}
+a:active {
+  background-color: #D2DEFF;
+}
 /* menu */
-nav{margin-top: 2.08333333%;
-    margin-bottom: 2.08333333%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
 
-nav a:hover{background-color: #6DFFFA;}
-
-.main-menu>li{
+nav {
+  margin-top: 2.08333333%;
+  margin-bottom: 2.08333333%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav a:hover {
+  background-color: #6DFFFA;
+}
+.main-menu>li {
   display: inline-block;
   width: auto;
   margin-right: 2%;
 }
-
-.sub-menu{
-  position:absolute;
-  visibility:hidden;
+.sub-menu {
+  position: absolute;
+  visibility: hidden;
   display: inline-block;
   width: auto;
   font-size: 78%;
   line-height: 2em;
-  padding:0.5em;
-  background-color: rgb(31,6,2);
+  padding: 0.5em;
+  background-color: rgb(31, 6, 2);
 }
-
 /* home page main section */
 }
-.main{
+.main {
   width: 100%;
   height: 100%;
   margin-bottom: 2.08333333%;
@@ -100,8 +103,7 @@ nav a:hover{background-color: #6DFFFA;}
   margin-right: auto;
   /*color: #7F0C1E;*/
 }
-
-.main .container{
+.main .container {
   width: 80%;
   height: 80%;
   padding: 1.04166666% 1.04166666% 1.04166666% 1.04166666%;
@@ -109,36 +111,32 @@ nav a:hover{background-color: #6DFFFA;}
   line-height: 2em;
   margin: auto;
 }
-
-.main span{
+.main span {
   color: #FF9E15;
   font-size: 2em;
   padding-left: 0.05em;
   padding-right: 0.05em;
   font-family: 'Dancing Script', cursive;
 }
-
-.main h1{
+.main h1 {
   font-size: 115%;
   font-weight: bolder;
   width: 100%;
 }
-
-.main p{
+.main p {
   white-space: pre-line;
   font-size: 100%;
   font-style: italic;
 }
 
 /* blog index main section */
-.blog-main .container{
+.blog-main .container {
   text-align: center;
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
 }
-
-.blog-main section{
+.blog-main section {
   display: inline-block;
   /*padding: 0.52083333% 0.52083333% 0.52083333% 0.52083333%;*/
   padding-top: 2.5em;
@@ -149,22 +147,23 @@ nav a:hover{background-color: #6DFFFA;}
   float: left;
   margin-left: 3.64583333333%;
 }
-
-.blog-main a{
+.blog-main a {
   text-decoration: none;
   font-size: 90%;
   width: auto;
   padding-top: 0.22em;
   padding-bottom: 0.22em;
 }
-.blog-main a:hover{background-color: #6DFFFA;}
-
-.blog-main li{
+.blog-main a:hover {
+  background-color: #6DFFFA;
+}
+.blog-main li {
   margin-top: 2%;
-  font-size: 0.8em;}
+  font-size: 0.8em;
+}
 
 /* project index main section */
-.project-main{
+.project-main {
   width: 100%;
   height: 100%;
   padding-left: 2.08333333%;
@@ -177,100 +176,102 @@ nav a:hover{background-color: #6DFFFA;}
   -o-column-count: 2;
   column-count: 2;
 }
-
-.project-main a{width: auto;}
-
-.project-main a:hover{background-color: #6DFFFA;}
-
-.project-main .container{
+.project-main a {
+  width: auto;
+}
+.project-main a:hover {
+  background-color: #6DFFFA;
+}
+.project-main .container {
   width: 100%;
   height: 100%;
   padding: 1.04166666% 1.04166666% 1.04166666% 1.04166666%;
 }
-
-.project-main .project{
+.project-main .project {
   width: 100%;
   display: inline-block;
   margin-top: 1.04166666%;
 }
-
-.project p{
+.project p {
   white-space: pre-line;
   text-align: center;
   line-height: 110%;
 }
 
 /* social-icon */
-.social-icon{
+.social-icon {
   text-align: center;
   margin-bottom: 5%;
   margin-top: 2.08333333%;
   width: 100%;
   height: 100%;
 }
-
-.social-icon .container{
+.social-icon .container {
   padding-top: 1.04166666%;
   display: inline-block;
   height: 80%;
   width: 80%;
 }
-
-.social-icon a{width: auto;}
-
-.social-icon img{
+.social-icon i.fa {
+  color: #F30505;
+}
+.social-icon a {
+  width: auto;
+}
+.social-icon img {
   margin-left: 3.125%;
   margin-right: 3.125%;
 }
-
-.social-icon img:hover{
+.social-icon img:hover, i.fa:hover {
   opacity: 0.7;
-  -ms-transform: scale(0.7,0.7);
-  -webkit-transform: scale(0.7,0.7);
-  transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
 }
 
 /* footer section */
-footer{
+footer {
   text-align: center;
   width: 100%;
   margin-top: 1.5%;
   margin-bottom: 2%;
   color: #ABA090;
 }
-
-blog-index{
+blog-index {
   width: 100%;
   height: 100%;
   color: #1A2140;
 }
 
-
-
 /* Media Queries */
-
-@media screen (min-device-width: 768px;) and (max-device-width: 1024px;) and (orientation: landscape;){
-  body{
+@media screen (min-device-width: 768px;
+) and (max-device-width: 1024px;
+) and (orientation: landscape;
+) {
+  body {
     font-size: 1em;
     width: 100%;
   }
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  html{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  html {
     background: url(../imgs/background_ShanDong.jpg) no-repeat center center fixed;
     /*width: 100%;*/
     /*height: 100%;*/
+
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
     font-size: 0.9em;
   }
-
-  body{width: 100%;}
-
-  a{font-size: 95%;}
-
-  .blog-main a{word-break: break-all;}
+  body {
+    width: 100%;
+  }
+  a {
+    font-size: 95%;
+  }
+  .blog-main a {
+    word-break: break-all;
+  }
 }

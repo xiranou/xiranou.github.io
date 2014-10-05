@@ -116,9 +116,9 @@ header p{
 .side li{color:rgb(9, 176, 199);}
 
 /* general a tag */
-a{color: #6DF00A;}
+a, i.fa{color: #6DF00A;}
 
-a:visited{color: #F6ECB6;}
+a:visited, i.fa:visited{color: #F6ECB6;}
 
 /* navigation */
 nav{
@@ -198,12 +198,12 @@ footer section p{
   width: 80%;
 }
 
-.social-icon img{
+.social-icon img, i.fa{
   margin-left: 3.083333333%;
   margin-right: 3.083333333%;
 }
 
-.social-icon img:hover{
+.social-icon img:hover, i.fa:hover{
   opacity: 0.5;
   -ms-transform: scale(0.7,0.7);
   -webkit-transform: scale(0.7,0.7);
