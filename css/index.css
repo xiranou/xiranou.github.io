@@ -177,7 +177,7 @@ nav a:hover {
   column-count: 2;
 }
 .project-main a {
-  width: auto;
+  width: 50%;
   line-height: 2em;
   padding-bottom: 2em;
 }
