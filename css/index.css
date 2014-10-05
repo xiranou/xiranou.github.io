@@ -178,6 +178,8 @@ nav a:hover {
 }
 .project-main a {
   width: auto;
+  line-height: 2em;
+  padding-bottom: 2em;
 }
 .project-main a:hover {
   background-color: #6DFFFA;
