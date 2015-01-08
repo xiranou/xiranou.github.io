@@ -1,3 +1,3 @@
 xiranou.github.io
 =================
-Hi! Using Jekyll.
+Hi! Welcome to my blog!
