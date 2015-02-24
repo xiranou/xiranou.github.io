@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'jekyll'
+gem 'jekyll', '2.4.0'
 gem 'github-pages'
-gem 'rouge'
 gem 'blankslate', '~> 2.0'
