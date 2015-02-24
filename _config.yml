@@ -10,5 +10,5 @@ github_username:  xiranou
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 exclude: [vendor]
