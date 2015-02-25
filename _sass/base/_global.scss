@@ -104,3 +104,12 @@ img[align=left] {
 img[align=right] {
   margin-left: 3%;
 }
+
+// extends
+code{
+  color: $i-code-color;
+  font-style: $i-code-style;
+  font-size: $i-code-size;
+  padding-left: $padding-xx-small;
+  padding-right: $padding-xx-small;
+}
