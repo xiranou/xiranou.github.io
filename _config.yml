@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+url: "http://xiranou.github.io" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -8,7 +8,7 @@ theme:
   title: Xiran Ou's Bizzard Adventure
   avatar: ran.png
   gravatar: 2dbb1e7f1befe27f201cf9acec3f9775 # email md5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  description: "My unexpected and exciting journey into the world of code" # used by search engines
 
   # Header and footer text
   header_text: >
@@ -18,23 +18,23 @@ theme:
 
   # Icons
   rss: false
-  email_address: # full email address, e.g. "sam@example.com"
+  email_address: "xiranou@gmail.com"# full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: "rohanchandra/type-theme"
-  google_plus:
+  github: "xiranou"
+  google_plus: "+XiranOu"
   instagram:
-  linkedin:  # full URL
+  linkedin: "https://www.linkedin.com/pub/xiran-ou/34/413/328/en"# full URL
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: "xiranouny"
   wordpress:
   youtube:
 
