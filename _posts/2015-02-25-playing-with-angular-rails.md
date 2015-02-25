@@ -8,7 +8,7 @@ So recently I'm learning AngularJS. A fun framework that extends HTML and lets y
 Before we start, we need to remove turbolinks if your app has it. Turbolinks serve a similar purpose as Angular, but Angular can do so much more, and is much more fun that the ol'turbolinks. Remove the 'turbolinks' gem in your Gemfile, remove the two `"data-turbolinks-track" => true` hash key/value pairs from your 'app/views/layouts/application.html.erb' and remove the reference inside your JavaScript manifest.
 
 
-First thing first, settup Angular in your Rails application. I've found some good tutorials online which I'll link below, but this is the fun stuff that I've found.
+First thing first, settup Angular in your Rails application. I've found some good tutorials online which I'll link below, but this is the some of the fun stuff that I've found about setting up Angular in a Rails app.
 
 Setting up Angular is quite easy. First in your Gemfile add `gem 'bower-rails'`  and then run  `bundle install`. (If you don't have Node installed, you can run  `brew install node`  in your terminal and follow the instructions after intstallition.) This gem adds bower to your Rails application, which is a package manager for your front-end componenets such as Angular.
 
