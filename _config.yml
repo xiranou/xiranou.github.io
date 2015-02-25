@@ -1,14 +1,65 @@
-# Site settings
-title: Xiran Ou's Bizarre Adventures
-name: Xiran Ou
-email: xiranou@gmail.com
-description: My unexpected journey into a world of codes
-baseurl: ""
-url: "http://xiranou.github.io"
-twitter_username: riceynoodle
-github_username:  xiranou
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://xiranou.github.io" # the base hostname & protocol for your site
 
-# Build settings
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Xiran Ou's Bizzard Adventure
+  avatar: ran.png
+  gravatar: 2dbb1e7f1befe27f201cf9acec3f9775 # email md5 hash
+  description: "My unexpected and exciting journey into the world of code" # used by search engines
+
+  # Header and footer text
+  header_text: >
+      Hello World! Welcome to my blog.
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+
+  # Icons
+  rss: false
+  email_address: "xiranou@gmail.com"# full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "xiranou"
+  google_plus: "+XiranOu"
+  instagram:
+  linkedin: "https://www.linkedin.com/pub/xiran-ou/34/413/328/en"# full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # full URL
+  steam:
+  tumblr:
+  twitter: "xiranouny"
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # tracking id, e.g. "UA-000000-01"
+  disqus_shortname:
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
 markdown: kramdown
 highlighter: pygments
-exclude: [vendor]
+sass:
+  sass_dir: _sass
+  style: :compressed
