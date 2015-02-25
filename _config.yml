@@ -6,8 +6,8 @@ url: "http://example.com" # the base hostname & protocol for your site
 theme:
   # Meta
   title: Xiran Ou's Bizzard Adventure
-  avatar: avatar.png
-  gravatar: # email md5 hash
+  avatar: ran.png
+  gravatar: 2dbb1e7f1befe27f201cf9acec3f9775 # email md5 hash
   description: "A website with blog posts and pages" # used by search engines
 
   # Header and footer text
