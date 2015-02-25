@@ -5,8 +5,8 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I'm passionate about solving challenging problems, I enjoy the sense of accomplishment when implementing effective solutions and gaining a great deal of knowledge along the way. I take great joy in learning better practices, crafting elegant and maintainable code. I'm also passionate about learning and understanding new technologies, as I'm always curious at the power and limitations of different languages and frameworks.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+I'm highly focused and motivated, which allows me to be a proficient learner to new languages and frameworks. I care about having a good relationships with the people I work with as I enjoy learning from others and would love to help with the best of my abilities whenever possible.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+I'm enticed by the magical spells of programming and aim to become a grand magus of these spells. I would love to work with people who share the same passion.
