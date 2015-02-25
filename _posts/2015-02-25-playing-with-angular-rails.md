@@ -21,3 +21,11 @@ Inside the 'config/application.rb' file, all we need to do to add 'bower-compone
 Lastly, add the reference to your JavaScript manifest. If you look into the 'bower_components' folder you will see that the file 'angular.js' and 'angular.min.js' lives inside the 'angular' folder. So when you create the reference, make sure it is  `//= require angular/angular`  or  `//= require angular/angular.min`  if you want to use the minfiy version.
 
 And that's it. Angular is all set up!
+
+Tutorials:
+
+[AngularJS with Ruby on Rails](http://angular-rails.com/)
+
+[Getting Started with AngularJS and Rails 4](http://blog.honeybadger.io/beginners-guide-to-angular-js-rails/)
+
+[Angular with Rails, Part I: Setting Up a Project](http://www.intridea.com/blog/2014/9/25/how-to-set-up-angular-with-rails)
