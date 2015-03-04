@@ -12,7 +12,7 @@ theme:
 
   # Header and footer text
   header_text: >
-      Welcome! Here are my whispers about code, life, and randomness.
+      Welcome to my whispers about code, life, and randomness!
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
