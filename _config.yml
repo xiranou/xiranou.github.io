@@ -5,14 +5,14 @@ url: "http://xiranou.github.io" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Xiran Ou's Bizzard Adventure
+  title: Xiran Ou's Whispers
   avatar: ran.png
   gravatar: #2dbb1e7f1befe27f201cf9acec3f9775 # email md5 hash
   description: "My unexpected and exciting journey into the world of code" # used by search engines
 
   # Header and footer text
   header_text: >
-      Hello World! Welcome to my blog.
+      Welcome! Here are my whispers about code, life, and randomness.
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
