@@ -15,8 +15,9 @@ feature-img: "img/sample_feature_img.png"
     <h4 class="title">{{project.name}}</h4>
     {% endif %}
     <a href="{{project.source}}" target="_blank">
-      <p>source</p>
+      <p class='h5'>source</p>
     </a>
+    <p class='h5'>{{project.description}}</p>
     <img src="/img/projects/{{project.img}}" alt="{{project.name}}">
   </div>
   {% endfor %}

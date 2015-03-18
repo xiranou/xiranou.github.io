@@ -2,14 +2,18 @@
   img: packsnap.png
   link: http://packsnap.heroku.com
   source: https://github.com/xiranou/PackSnap
+  description: A visual travel app that makes packing for a new trip easier.
 - name: Super-Working-Title
   img: super-working-title.png
   link: http://wizardworld.heroku.com
   source: https://github.com/xiranou/Super-Working-Title
+  description: 1v1 SmashBro-like game made with Phaser library and JavaScript
 - name: GameOverflow
   img: gameOverflow.png
   source: https://github.com/xiranou/GameOverflow
+  description: An app for gamers to create posts and comments on a specific game,genre, or game console.
 - name: BeaxIt
   img: beaxit.png
   link: http://beaxit.heroku.com
   source: https://github.com/xiranou/BeaxIt
+  description: Provides the users to search songs through iTunes API and customize their own playlists.
