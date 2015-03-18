@@ -1,0 +1,23 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+feature-img: "img/sample_feature_img.png"
+---
+<div class="clearfix mxn2">
+  {% for project in site.data.projects %}
+  <div class="col col-6 px2 mb3">
+    {% if project.link %}
+    <a href="{{project.link}}" target="_blank">
+    <h4 class="title">{{project.name}}</h4>
+    </a>
+    {% else %}
+    <h4 class="title">{{project.name}}</h4>
+    {% endif %}
+    <a href="{{project.source}}" target="_blank">
+      <p>source</p>
+    </a>
+    <img src="/img/projects/{{project.img}}" alt="{{project.name}}">
+  </div>
+  {% endfor %}
+</div>
