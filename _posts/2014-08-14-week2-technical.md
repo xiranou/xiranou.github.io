@@ -19,7 +19,7 @@ div{
   display: inline;}
 {% endhighlight %}
 
-<img src="{{site.baseurl}}/imgs/inline.png" alt="inline img">
+![inline img](/img/week-2/inline.png)
 
 <b>Block</b>
 
@@ -34,7 +34,7 @@ div{
   display: block;}
 {% endhighlight %}
 
-<img src="{{site.baseurl}}/imgs/block.png" alt="block img">
+![block img](/img/week-2/block.png)
 
 <b>Inline-Block</b>
 
@@ -49,6 +49,6 @@ div{
   display: inline-block;}
 {% endhighlight %}
 
-<img src="{{site.baseurl}}/imgs/inline-block.png" alt="inline-block img">
+![inline-block img](/img/week-2/inline-block.png)
 
 You can use CSS to change the display property of HTML elements. This will help greatly when you want your divs to sit next to each-other, or your img tags to stack on-top of each other.
