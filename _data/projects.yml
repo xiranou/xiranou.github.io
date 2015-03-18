@@ -1,0 +1,15 @@
+- name: PackSnap
+  img: packsnap.png
+  link: http://packsnap.heroku.com
+  source: https://github.com/xiranou/PackSnap
+- name: Super-Working-Title
+  img: super-working-title.png
+  link: http://wizardworld.heroku.com
+  source: https://github.com/xiranou/Super-Working-Title
+- name: GameOverflow
+  img: gameOverflow.png
+  source: https://github.com/xiranou/GameOverflow
+- name: BeaxIt
+  img: beaxit.png
+  link: http://beaxit.heroku.com
+  source: https://github.com/xiranou/BeaxIt
